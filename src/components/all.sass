@@ -1,0 +1,236 @@
+@import "~slick-carousel/slick/slick.css"
+@import "~slick-carousel/slick/slick-theme.css"
+@import "~bulma/sass/utilities/initial-variables"
+
+@font-face
+  font-family: "CFAstyPro"
+  src: url("../fonts/CFAstyPro-Light.otf")
+  font-weight: 300
+
+@font-face
+  font-family: "CFAstyPro"
+  src: url("../fonts/CFAstyPro-Medium.otf")
+  font-weight: 500
+
+@font-face
+  font-family: "CFAstyPro"
+  src: url("../fonts/CFAstyPro-Book.otf")
+  font-weight: 600
+
+@font-face
+  font-family: "CFAstyPro"
+  src: url("../fonts/CFAstyPro-Bold.otf")
+  font-weight: 700
+
+@font-face
+  font-family: "CFPanoptik"
+  src: url("../fonts/CFPanoptik-Light.otf")
+  font-weight: 300
+
+@font-face
+  font-family: "CFPanoptik"
+  src: url("../fonts/CFPanoptik-Book.otf")
+  font-weight: 600
+
+@font-face
+  font-family: "CFPanoptik"
+  src: url("../fonts/CFPanoptik-Bold.otf")
+  font-weight: 700
+
+// Config vars
+$altour-primary: #83a3b2
+$altour-primary-invert: #fff
+
+$text: $altour-primary
+$primary: $altour-primary
+$primary-invert: $altour-primary-invert
+$black: #2b2523
+$text: $altour-primary
+$grey-darker: $altour-primary
+$card-radius: 0rem
+$family-serif: "CFAstyPro"
+$family-primary: $family-serif
+$size-1: 4.5rem
+$body-line-height: 1.2
+
+.navbar
+  // position: absolute!important
+  width: 100%!important
+
+.navbar-item
+  font-weight: bold
+  font-family: "CFPanoptik"
+  font-size: 1rem
+  color: #28407f!important
+
+.navbar .navbar-menu
+  box-shadow: none !important
+
+.content .taglist
+  list-style: none
+  margin-bottom: 0
+  margin-left: 0
+  margin-right: 1.5rem
+  margin-top: 1.5rem
+  display: flex
+  flex-wrap: wrap
+  justify-content: left
+  align-items: center
+  li
+    padding: 0 2rem 1rem 0
+    margin-bottom: 1.5rem
+    margin-top: 0
+
+// Helper Classes
+.full-width-image-container
+  width: 100vw
+  height: 400px
+  position: relative
+  left: 50%
+  right: 50%
+  margin: 2em -50vw
+  background-size: cover
+  background-position: bottom
+  display: flex
+  justify-content: center
+  align-items: center
+
+.full-width-image
+  width: 100vw
+  height: 400px
+  background-size: cover
+  background-position: bottom
+  display: flex
+  justify-content: center
+  align-items: center
+
+.btn
+  display: inline-block
+  padding: 12px 16px 10px
+  font-size: 18px
+  font-size: 1rem
+  line-height: 1.25
+  background-color: #fff
+  text-decoration: none
+  font-weight: 700
+  color: $primary
+  text-align: center
+  -webkit-transition: all .15s ease
+  transition: all .15s ease
+
+.margin-top-0
+  margin-top: 0 !important
+
+.navbar-item .icon
+  color: $primary
+// Override for use of svg's from https://simpleicons.org/
+.icon svg
+  width: 1.5rem
+  height: 1.5rem
+  fill: currentColor
+.navbar-brand
+  background-color: $primary-invert
+.navbar-brand .navbar-item img
+  max-height: 3rem
+
+.navbar-brand .navbar-item.logo
+  padding: 0 1rem
+
+footer.footer
+  padding: 3rem 0rem 0rem
+  background-color: transparent
+.content ul
+  margin-left: 1em!important
+.menu-list
+  list-style: none !important
+  text-align: left
+
+.menu-list a
+  padding: inherit!important
+  font-size: 0.85rem
+.menu-list a:hover
+  background-color: transparent!important
+
+// blog roll
+.blog-list-item.is-featured
+  background-color: #d6400033
+.blog-list-item header
+  display: flex
+  margin-bottom: 1em
+.blog-list-item .featured-thumbnail
+  flex-basis: 35%
+  margin: 0 1.5em 0 0
+
+.arrow-section-white
+  position: relative
+  background-color: $primary-invert
+  /* height: 320px !important; */
+  width: 100% !important
+
+.arrow-section-white:after
+  content: ''
+  position: absolute
+  top: 100%
+  left: 15%
+  margin-left: -50px
+  width: 0
+  height: 0
+  border-top: solid 50px $primary-invert
+  border-left: solid 50px transparent
+  border-right: solid 50px transparent
+  z-index: 1
+
+.arrow-section-primary
+  position: relative
+  background-color: $altour-primary
+  /* height: 320px !important; */
+  width: 100% !important
+
+.arrow-section-primary:after
+  content: ''
+  position: absolute
+  top: 100%
+  left: 50%
+  margin-left: -50px
+  width: 0
+  height: 0
+  border-top: solid 50px $altour-primary
+  border-left: solid 50px transparent
+  border-right: solid 50px transparent
+  // svg 
+.b
+  stroke: #fff
+
+
+.latest-news-section:before 
+  content: ' '
+  display: block
+  position: absolute
+  left: 0
+  top: 0
+  width: 100%
+  height: 100%
+  opacity: 0.5
+  background-image: url("../img/watermark-home-2.svg")
+  background-repeat: no-repeat
+  background-position: center center
+  background-size: 110%
+
+
+@import "~bulma"
+
+// responsiveness
++tablet-only
+  .blog-list-item .featured-thumbnail
+    flex-basis: 50%
+
++mobile
+  .blog-list-item header
+    display: block
+  .blog-list-item .featured-thumbnail
+    text-align: center
+    max-width: 70%
+    margin: 0 0 1em
+
+
+

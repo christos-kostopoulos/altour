@@ -1,0 +1,11 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120">
+	<title>icons8-facebook-120</title>
+	<defs>
+		<image  width="96" height="97" id="img1" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABhBAMAAADb6rmuAAAAAXNSR0IB2cksfwAAABhQTFRFAAAA////dpOdfJqle5ije5mkfJmkepijwXd/ZQAAAAh0Uk5TAP/9//////12DJQVAAABSklEQVR4nO2Y2RHCMAxE4w4cWuFohQrovwVmYAiWtKu1M/4K+NN6LyuH4BzLEse6DVDM8C6lrG7UkcPrEMRnBua5EfoX66A8MziPm8p4ZCQN4aZyPkaIgBiheB8hA3yE5m1ER4CN6OHbiK6ANmJYSAHQEw6o8XA1E1B+zTqCp7ArYAmzUMA/UjgNKMDUqbAkgurICJUIdaqQdQQriYAro0JykvDqpgiVX5Q7BDxLhfUv/KiAbvkHEMoBhTIm+F1jWDAaqOwR0HQi4OnJAlgEF8g9LhfAPBfI/GwhLoIK7GlGCLFABXzFywONC6HCBPIfoQJ/MpaCLxHhy/sILNCnLia0PN47kgBXhILlbQQSwo6lBM+bCCCALTEXIg9eLATfNBUE9cruBfqpggmM3xAncP7TlRHEp5PiBcG/sUaQ+As8Xc7X2+PeiYvxBFiWy66nI5/LAAAAAElFTkSuQmCC"/>
+	</defs>
+	<style>
+		.s0 { fill: #28407f } 
+	</style>
+	<circle id="Shape 1" class="s0" cx="60" cy="60" r="50"/>
+	<use id="Background" href="#img1" x="12" y="12"/>
+</svg>

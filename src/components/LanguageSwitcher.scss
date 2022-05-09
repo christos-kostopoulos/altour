@@ -1,0 +1,15 @@
+.LanguageSwitcher {
+  display: flex;
+  flex-direction: row;
+  margin: 0 4.2rem;
+  &-item,
+  &-item-active {
+    margin: 0 1.6rem;
+    font-family: 'Press Start 2P', cursive;
+    color: #9dc6a7;
+    font-size: 1.8rem;
+  }
+  &-item-active {
+    color: #00ff3e;
+  }
+}
