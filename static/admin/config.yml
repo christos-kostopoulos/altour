@@ -147,17 +147,17 @@ collections:
                 { label: Title, name: title, widget: string },
                 { label: Description, name: description, widget: text },
               ],
-          }
-        - {
-            label: Latest,
-            name: latest,
-            widget: object,
-            fields:
-              [
-                { label: Title, name: title, widget: string },
-                { label: Description, name: description, widget: text },
-              ],
-          }
+            }
+          - {
+              label: Latest,
+              name: latest,
+              widget: object,
+              fields:
+                [
+                  { label: Title, name: title, widget: string },
+                  { label: Description, name: description, widget: text },
+                ],
+            }
       #Journal DE
       - file: 'content/de/main-pages/journal.md'
         label: Journal
