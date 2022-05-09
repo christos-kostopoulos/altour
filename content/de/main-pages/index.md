@@ -6,7 +6,12 @@ heroHeading: Willkommen bei Robco Industries (TM) Termlink
 image: /img/waterfall.jpg
 projectHeading: το έργο
 projectDescription: >
-  Standardisierte Revolverkopf-Steuerungs-Firmware v8
+  Συνολικός στόχος του έργου είναι η ενίσχυση και βιωσιμότητα του
+  ιαματικού τουρισμού με την ανάδειξη/προώθηση των ιαματικών φυσικών πηγών στη
+  διασυνοριακή περιοχή Ελλάδας – Αλβανίας, κυρίως μέσω της ανάπτυξης στρατηγικού
+  σχεδίου μάρκετινγκ, συγκριτικής αξιολόγησης, τεχνικών branding και επένδυσης
+  στην ανάπτυξη ικανοτήτων μέσω της εκπαίδευσης και συνεργασίας όλων των
+  εμπλεκόμενων φορέων στον τουρισμό.
 locations:
   title: Περιοχές Εφαρμογής
   description: >

@@ -53,25 +53,9 @@ collections:
                 { label: Description, name: description, widget: text },
               ],
             }
-      #Journal 
-      - file: 'content/en/main-pages/journal.md'
-        label: Journal
-        name: journalEN
-        identifier_field: name
-        fields:
-          - {
-              label: Template Key,
-              name: templateKey,
-              widget: hidden,
-              default: templates/journal,
-            }
-          - { label: Type, name: type, widget: hidden, default: 1 }
-          - { label: Language, name: language, widget: hidden, default: en }
-          - { label: Title, name: title, widget: string }
-          - { label: SEO Description, name: description, widget: text }
-
+     
   #Note EN
-  - name: 'noteEn'
+  - name: 'locationEn'
     label: 'Note (english)'
     folder: 'content/en/note'
     filter: { field: contentType, value: note }
@@ -156,29 +140,12 @@ collections:
                   { label: Description, name: description, widget: text },
                 ],
             }
-      #Journal DE
-      - file: 'content/de/main-pages/journal.md'
-        label: Journal
-        name: journalDE
-        identifier_field: name
-        fields:
-          - {
-              label: Template Key,
-              name: templateKey,
-              widget: hidden,
-              default: templates/journal,
-            }
-          - { label: Type, name: type, widget: hidden, default: 1 }
-          - { label: Language, name: language, widget: hidden, default: de }
-          - { label: Title, name: title, widget: string }
-          - { label: SEO Description, name: description, widget: text }
-
+     
   #Note DE
-  - name: 'noteDe'
+  - name: 'locationDe'
     label: 'Note (deutsch)'
     folder: 'content/de/note'
-    filter: { field: contentType, value: mote }
-    create: true
+    filter: { field: contentType, value: note }
     slug: '{{slug}}'
     identifier_field: slug
     fields:

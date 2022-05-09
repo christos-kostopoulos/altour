@@ -5,19 +5,20 @@ import { getImage } from "gatsby-plugin-image";
 import Layout from "../components/Layout";
 import Navbar from "../components/Navbar";
 import FullWidthImage from "../components/FullWidthImage";
-
-import watermark1 from "../img/watermark-home-1.svg";
-import watermark2 from "../img/watermark-home-2.svg";
+// import LocationRoll from "../components/LocationRoll/LocationRoll";
 import watermark3 from "../img/watermark-3.png";
 
-const IndexPage = ({ data }) => {
-  const { frontmatter: content } = data.content;
-  const heroImage = getImage(content.image) || content.image;
-
+export const IndexPageTemplate = ({
+  heroImage,
+  heroHeading,
+  projectHeading,
+  projectDescription,
+  locations,
+  latest,
+}) => {
   return (
-    <Layout>
-      <Navbar lang={content.language} slug={data.page.fields.slug} />
-      <FullWidthImage img={heroImage} title={content.heroHeading} />
+    <>
+      <FullWidthImage img={heroImage} title={heroHeading} />
       <section className="section section--gradient">
         <div className="container">
           <div className="content">
@@ -27,13 +28,13 @@ const IndexPage = ({ data }) => {
               </div>
               <div className="column has-text-right is-4">
                 <h3 className="has-text-weight-light is-size-1 is-size-2">
-                  {content.projectHeading}
+                  {projectHeading}
                 </h3>
                 <p
                   style={{ lineHeight: "2.5rem" }}
                   className="is-size-5 is-size-6 has-text-weight-semibold"
                 >
-                  {content.projectDescription}
+                  {projectDescription}
                 </p>
                 <Link to="/about">
                   <button className="button is-primary">READ MORE</button>
@@ -45,13 +46,13 @@ const IndexPage = ({ data }) => {
       </section>
       <div>
         <h1 className="has-text-weight-light is-size-1 is-size-3-mobile has-text-centered mb-2">
-          {content.locations.title}
+          {locations.title}
         </h1>
         <p
           className="has-text-centered has-text-weight-semibold pb-3"
           style={{ width: "80%", margin: "0 auto" }}
         >
-          {content.locations.description}
+          {locations.description}
         </p>
         {/* <LocationRoll /> */}
       </div>
@@ -63,22 +64,35 @@ const IndexPage = ({ data }) => {
           className="has-text-weight-light is-size-1 has-text-centered has-text-white"
           style={{ position: "relative" }}
         >
-          {content.latest.title}
+          {latest.title}
         </h3>
         <p
           className="has-text-weight-light has-text-centered has-text-white p-2 mb-2"
           style={{ width: "60%", margin: "0 auto", position: "relative" }}
         >
-          {content.latest.description}
+          {latest.description}
         </p>
         {/* <UpcomingRoll /> */}
       </div>
-      {/* <div className="content">
-        <h1>{content.description}</h1>
-        <div className="html">
-          <Markdown source={data.page.html} escapeHtml={false} />
-        </div>
-      </div> */}
+    </>
+  );
+};
+
+const IndexPage = ({ data }) => {
+  const { frontmatter: content } = data.content;
+
+  const heroImage = getImage(content.image) || content.image;
+  return (
+    <Layout>
+      <Navbar lang={content.language} slug={data.page.fields.slug} />
+      <IndexPageTemplate
+        heroImage={heroImage}
+        heroHeading={content.heroHeading}
+        projectHeading={content.projectHeading}
+        projectDescription={content.projectDescription}
+        locations={content.locations}
+        latest={content.latest}
+      />
     </Layout>
   );
 };
