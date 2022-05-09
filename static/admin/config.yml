@@ -2,9 +2,6 @@ backend:
   name: git-gateway
   repo: christos-kostopoulos/altour
   branch: main
-  accept_roles:
-    - admin
-    - editor
 slug:
   encoding: 'ascii'
   clean_accents: true
@@ -21,7 +18,7 @@ collections:
     filter: { field: language, value: en }
     identifier_field: name
     editor:
-      preview: false
+      preview: true
     files:
       #Index
       - file: 'content/en/main-pages/index.md'
@@ -96,6 +93,7 @@ collections:
           widget: hidden,
           default: note,
         }
+      - { label: "Featured Image", name: "featuredimage", widget: image }
       - {
           label: Title,
           name: title,
@@ -123,7 +121,7 @@ collections:
     label: 'Main Pages (deutsch)'
     filter: { field: language, value: de }
     editor:
-      preview: false
+      preview: true
     files:
       #Home
       - file: 'content/de/main-pages/index.md'
@@ -198,6 +196,7 @@ collections:
           widget: hidden,
           default: note,
         }
+      - { label: "Featured Image", name: "featuredimage", widget: image }
       - {
           label: Title,
           name: title,
