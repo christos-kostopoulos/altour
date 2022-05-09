@@ -1,0 +1,29 @@
+.card-description-container {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  padding: 2rem;
+  cursor: pointer;
+  top: 0;
+}
+
+.card-description-container .card-description-content {
+  display: none;
+}
+
+.card-description-container:hover .card-description-content {
+  background-color: rgba(0, 0, 0, 0.9);
+  width: 100%;
+  height: 100%;
+  color: white;
+  display: flex;
+  align-items: center;
+}
+.slick-prev {
+  left: 5px!important;
+  z-index: 10;
+}
+
+.slick-next { 
+  right: 5px!important;
+}
