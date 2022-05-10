@@ -1,10 +1,10 @@
 ---
 templateKey: templates/location
-slug: ioannina
+slug: kastoria
 language: gr
 contentType: location
-featuredimage: /img/ioannina.jpg
-title: Ιωάννινα
+featuredimage: /img/kastoria.png
+title: Καστοριά
 date: 2022-05-11
 ---
-ioannina
+Καστορια

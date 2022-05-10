@@ -1,10 +1,10 @@
 ---
 templateKey: templates/location
-slug: ioannina
+slug: preveza
 language: gr
 contentType: location
-featuredimage: /img/ioannina.jpg
-title: Ιωάννινα
+featuredimage: /img/preveza.png
+title: Πρέβεζα
 date: 2022-05-11
 ---
-ioannina
+Πρέβεζα

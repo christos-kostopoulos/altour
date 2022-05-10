@@ -3,9 +3,9 @@ backend:
   repo: christos-kostopoulos/altour
   branch: main
 slug:
-  encoding: 'ascii'
+  encoding: "ascii"
   clean_accents: true
-  sanitize_replacement: '-'
+  sanitize_replacement: "-"
 
 publish_mode: editorial_workflow
 media_folder: static/img
@@ -13,54 +13,90 @@ public_folder: /img
 
 collections:
   # Main Pages EN
-  - name: 'mainPageEn'
-    label: 'Main Pages (english)'
+  - name: "mainPageEn"
+    label: "Main Pages (english)"
     filter: { field: language, value: en }
     identifier_field: name
     editor:
       preview: true
     files:
       #Index
-      - file: 'content/en/main-pages/index.md'
+      - file: "content/en/main-pages/index.md"
         label: Index
         name: indexEN
         identifier_field: name
         fields:
-          - { label: Template Key, name: templateKey, widget: hidden, default: templates/index  }
+          - {
+              label: Template Key,
+              name: templateKey,
+              widget: hidden,
+              default: templates/index,
+            }
           - { label: Type, name: type, widget: hidden, default: 1 }
           - { label: Language, name: language, widget: hidden, default: en }
           - { label: Hero Heading, name: heroHeading, widget: string }
           - { label: Hero Image, name: image, widget: image }
           - { label: Project Title, name: projectHeading, widget: string }
-          - { label: Project Description, name: projectDescription, widget: text }
           - {
-            label: Locations,
-            name: locations,
-            widget: object,
-            fields:
-              [
-                { label: Title, name: title, widget: string },
-                { label: Description, name: description, widget: text },
-              ],
+              label: Project Description,
+              name: projectDescription,
+              widget: text,
             }
           - {
-            label: Latest,
-            name: latest,
-            widget: object,
-            fields:
-              [
-                { label: Title, name: title, widget: string },
-                { label: Description, name: description, widget: text },
-              ],
+              label: Locations,
+              name: locations,
+              widget: object,
+              fields:
+                [
+                  { label: Title, name: title, widget: string },
+                  { label: Description, name: description, widget: text },
+                ],
             }
-     
+          - {
+              label: Latest,
+              name: latest,
+              widget: object,
+              fields:
+                [
+                  { label: Title, name: title, widget: string },
+                  { label: Description, name: description, widget: text },
+                ],
+            }
+      #About
+      - file: "content/en/main-pages/about.md"
+        label: About
+        name: aboutEN
+        filter: { field: language, value: en }
+        identifier_field: name
+        editor:
+          preview: true
+        fields:
+          - {
+              label: "Template Key",
+              name: "templateKey",
+              widget: "hidden",
+              default: "about",
+            }
+          - { label: Image, name: image, widget: image }
+          - {
+              label: Intro,
+              name: intro,
+              widget: object,
+              fields:
+                [
+                  { label: Heading, name: heading, widget: string },
+                  { label: Image, name: image1, widget: image },
+                ],
+            }
+          - { label: "Body", name: "body", widget: "markdown" }
+
   #Location EN
-  - name: 'locationEn'
-    label: 'Location (english)'
-    folder: 'content/en/location'
+  - name: "locationEn"
+    label: "Location (english)"
+    folder: "content/en/location"
     filter: { field: contentType, value: location }
     create: true
-    slug: '{{slug}}'
+    slug: "{{slug}}"
     identifier_field: slug
     fields:
       - {
@@ -82,34 +118,34 @@ collections:
           label: Title,
           name: title,
           widget: string,
-          pattern: ['.{0,80}', 'Oopsy, no more that 80 characters'],
+          pattern: [".{0,80}", "Oopsy, no more that 80 characters"],
         }
       - {
           label: Body,
           name: body,
           widget: markdown,
-          default: 'Be interesting but not annoying',
+          default: "Be interesting but not annoying",
         }
       - {
           label: Date,
           name: date,
           widget: date,
           format: YYYY-MM-DD,
-          default: '',
+          default: "",
         }
   #----------------------------------------------gr
 
   # Main Pages gr
-  - name: 'mainPageDe'
+  - name: "mainPageDe"
     identifier_field: name
-    label: 'Main Pages (Greek)'
+    label: "Main Pages (Greek)"
     filter: { field: language, value: gr }
-    
+
     editor:
       preview: true
     files:
       #Home
-      - file: 'content/gr/main-pages/index.md'
+      - file: "content/gr/main-pages/index.md"
         label: Index
         name: indexGR
         identifier_field: name
@@ -120,16 +156,20 @@ collections:
           - { label: Hero Heading, name: heroHeading, widget: string }
           - { label: Hero Image, name: image, widget: image }
           - { label: Project Title, name: projectHeading, widget: string }
-          - { label: Project Description, name: projectDescription, widget: text }
           - {
-            label: Locations,
-            name: locations,
-            widget: object,
-            fields:
-              [
-                { label: Title, name: title, widget: string },
-                { label: Description, name: description, widget: text },
-              ],
+              label: Project Description,
+              name: projectDescription,
+              widget: text,
+            }
+          - {
+              label: Locations,
+              name: locations,
+              widget: object,
+              fields:
+                [
+                  { label: Title, name: title, widget: string },
+                  { label: Description, name: description, widget: text },
+                ],
             }
           - {
               label: Latest,
@@ -141,14 +181,41 @@ collections:
                   { label: Description, name: description, widget: text },
                 ],
             }
-     
+      #About Page
+      - file: "content/gr/main-pages/about.md"
+        label: "About"
+        name: "aboutGR"
+        filter: { field: language, value: gr }
+        identifier_field: name
+        editor:
+          preview: true
+        fields:
+          - {
+              label: "Template Key",
+              name: "templateKey",
+              widget: "hidden",
+              default: "about",
+            }
+          - { label: Image, name: image, widget: image }
+          - {
+              label: Intro,
+              name: intro,
+              widget: object,
+              fields:
+                [
+                  { label: Heading, name: heading, widget: string },
+                  { label: Image, name: image1, widget: image },
+                ],
+            }
+          - { label: "Body", name: "body", widget: "markdown" }
+
   #Location gr
-  - name: 'locationGr'
-    label: 'Location (Greek)'
-    folder: 'content/gr/location'
+  - name: "locationGr"
+    label: "Location (Greek)"
+    folder: "content/gr/location"
     filter: { field: contentType, value: location }
     create: true
-    slug: '{{slug}}'
+    slug: "{{slug}}"
     identifier_field: slug
     fields:
       - {
@@ -170,7 +237,7 @@ collections:
           label: Title,
           name: title,
           widget: string,
-          pattern: ['.{0,80}', 'Oopsy, no more that 80 characters'],
+          pattern: [".{0,80}", "Oopsy, no more that 80 characters"],
         }
       - { label: Body, name: body, widget: markdown }
       - {
@@ -178,5 +245,5 @@ collections:
           name: date,
           widget: date,
           format: YYYY-MM-DD,
-          default: '',
+          default: "",
         }

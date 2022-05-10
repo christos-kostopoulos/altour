@@ -1,10 +1,10 @@
 ---
 templateKey: templates/location
-slug: ioannina
+slug: florina
 language: gr
 contentType: location
-featuredimage: /img/ioannina.jpg
-title: Ιωάννινα
+featuredimage: /img/florina.png
+title: Φλώρινα
 date: 2022-05-11
 ---
-ioannina
+Φλώρινα
