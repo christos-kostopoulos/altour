@@ -6,6 +6,7 @@ import Layout from "../components/Layout";
 import Navbar from "../components/Navbar";
 import FullWidthImage from "../components/FullWidthImage";
 import LocationRoll from "../components/LocationRoll/LocationRoll";
+import UpcomingRoll from "../components/UpcomingRoll/UpcomingRoll";
 import watermark3 from "../img/watermark-3.png";
 
 export const IndexPageTemplate = ({
@@ -16,8 +17,8 @@ export const IndexPageTemplate = ({
   locations,
   latest,
   locationPosts,
+  latestPosts
 }) => {
-
   return (
     <>
       <FullWidthImage img={heroImage} title={heroHeading} />
@@ -74,7 +75,7 @@ export const IndexPageTemplate = ({
         >
           {latest.description}
         </p>
-        {/* <UpcomingRoll /> */}
+        <UpcomingRoll {...latestPosts}/>
       </div>
     </>
   );
@@ -82,7 +83,7 @@ export const IndexPageTemplate = ({
 
 const IndexPage = ({ data }) => {
   const { frontmatter: content } = data.content;
-  
+  console.log(data)
   const heroImage = getImage(content.image) || content.image;
   return (
     <Layout>
@@ -95,6 +96,7 @@ const IndexPage = ({ data }) => {
         locations={content.locations}
         latest={content.latest}
         locationPosts={data.locationPosts}
+        latestPosts={data.latestPosts}
       />
     </Layout>
   );
@@ -142,6 +144,31 @@ export const indexQuery = graphql`
         frontmatter: {
           language: { eq: $language }
           contentType: { eq: "location" }
+        }
+      }
+    ) {
+      edges {
+        node {
+          id
+          fields {
+            slug
+          }
+          frontmatter {
+            featuredimage {
+              childImageSharp {
+                gatsbyImageData(quality: 100, layout: CONSTRAINED)
+              }
+            }
+            title
+          }
+        }
+      }
+    }
+    latestPosts: allMarkdownRemark(
+      filter: {
+        frontmatter: {
+          language: { eq: $language }
+          contentType: { eq: "upcoming" }
         }
       }
     ) {

@@ -204,7 +204,7 @@ collections:
           label: Template Key,
           name: templateKey,
           widget: hidden,
-          default: templates/location,
+          default: templates/upcoming,
         }
       - { label: Slug, name: slug, widget: string }
       - { label: Language, name: language, widget: hidden, default: en }
@@ -212,7 +212,7 @@ collections:
           label: Content Type,
           name: contentType,
           widget: hidden,
-          default: location,
+          default: upcoming,
         }
       - { label: "Featured Image", name: "featuredimage", widget: image }
       - {
@@ -220,6 +220,12 @@ collections:
           name: title,
           widget: string,
           pattern: [".{0,80}", "Oopsy, no more that 80 characters"],
+        }
+      - {
+          label: Description,
+          name: description,
+          widget: string,
+          default: [".{0,80}", "Oopsy, no more that 80 characters"],
         }
       - {
           label: Body,
@@ -407,7 +413,6 @@ collections:
           default: "",
         }
 
-
   - name: "upcomingGr"
     label: "Upcoming (Greeek)"
     folder: "content/gr/upcoming"
@@ -420,7 +425,7 @@ collections:
           label: Template Key,
           name: templateKey,
           widget: hidden,
-          default: templates/location,
+          default: templates/upcoming,
         }
       - { label: Slug, name: slug, widget: string }
       - { label: Language, name: language, widget: hidden, default: gr }
@@ -428,7 +433,7 @@ collections:
           label: Content Type,
           name: contentType,
           widget: hidden,
-          default: location,
+          default: upcoming,
         }
       - { label: "Featured Image", name: "featuredimage", widget: image }
       - {
@@ -442,6 +447,12 @@ collections:
           name: body,
           widget: markdown,
           default: "Be interesting but not annoying",
+        }
+      - {
+          label: Description,
+          name: description,
+          widget: string,
+          default: [".{0,80}", "Oopsy, no more that 80 characters"],
         }
       - {
           label: Date,

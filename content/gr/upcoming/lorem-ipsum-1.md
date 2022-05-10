@@ -1,8 +1,8 @@
 ---
-templateKey: templates/location
+templateKey: templates/upcoming
 slug: lorem-ipsum-1
 language: gr
-contentType: location
+contentType: upcoming
 featuredimage: /img/shutterstock_414684652.jpg
 title: Lorem Ipsum
 date: 2022-05-09
