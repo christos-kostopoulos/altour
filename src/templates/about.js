@@ -30,7 +30,8 @@ export const AboutPageTemplate = ({
                 className="title  has-text-weight-light is-bold-light"
               >
                 {/* {heading} */}
-              Υπουργείο Τουρισμού <br/>και Περιβάλλοντος Αλβανίας
+                Υπουργείο Τουρισμού <br />
+                και Περιβάλλοντος Αλβανίας
               </h2>
               <PageContent className="content" content={content} />
             </div>
@@ -262,10 +263,12 @@ AboutPageTemplate.propTypes = {
 };
 
 const AboutPage = ({ data }) => {
+//   const { frontmatter: content } = data.content;
   const { markdownRemark: post } = data;
   console.log(post);
   return (
     <Layout>
+      {/* <Navbar lang={content.language} slug={data.page.fields.slug} /> */}
       {/* <AboutPageTemplate
         content={post.html}
         contentComponent={HTMLContent}
@@ -294,7 +297,14 @@ export const aboutPageQuery = graphql`
             gatsbyImageData(quality: 100, layout: FULL_WIDTH)
           }
         }
-       
+        intro {
+          heading
+          image {
+            childImageSharp {
+              gatsbyImageData(quality: 100, layout: CONSTRAINED)
+            }
+          }
+        }
       }
     }
   }

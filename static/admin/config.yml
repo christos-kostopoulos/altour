@@ -136,7 +136,7 @@ collections:
   #----------------------------------------------gr
 
   # Main Pages gr
-  - name: "mainPageDe"
+  - name: "mainPageGr"
     identifier_field: name
     label: "Main Pages (Greek)"
     filter: { field: language, value: gr }
