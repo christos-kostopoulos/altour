@@ -263,18 +263,19 @@ AboutPageTemplate.propTypes = {
 };
 
 const AboutPage = ({ data }) => {
-//   const { frontmatter: content } = data.content;
-  const { markdownRemark: post } = data;
-  console.log(post);
+  const { frontmatter: content } = data.content;
+    
+  
+  console.log(content, data);
   return (
     <Layout>
       {/* <Navbar lang={content.language} slug={data.page.fields.slug} /> */}
-      {/* <AboutPageTemplate
-        content={post.html}
+      <AboutPageTemplate
+        content={data.page.html}
         contentComponent={HTMLContent}
-        image={post.frontmatter.image}
-        intro={post.frontmatter.intro}
-      /> */}
+        image={content.image}
+        intro={content.intro}
+      />
     </Layout>
   );
 };
@@ -288,9 +289,20 @@ AboutPage.propTypes = {
 export default AboutPage;
 
 export const aboutPageQuery = graphql`
-  query AboutPage($id: String!) {
-    markdownRemark(id: { eq: $id }) {
+  query AboutPage($id: String!, $language: String!) {
+    page: markdownRemark(id: { eq: $id }) {
+      fields {
+        slug
+      }
       html
+    }
+    content: markdownRemark(
+      frontmatter: {
+        type: { eq: 1 }
+        templateKey: { eq: "templates/about" }
+        language: { eq: $language }
+      }
+    ) {
       frontmatter {
         image {
           childImageSharp {
