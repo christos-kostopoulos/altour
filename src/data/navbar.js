@@ -4,7 +4,7 @@ module.exports = [
     path: "/",
     nav: [
       { href: "/about", title: "ΣΧΕΤΙΚΑ ΜΕ ΕΜΑΣ" },
-      { href: "/", title: " ΤΟ ΕΡΓΟ" },
+      { href: "/project", title: "ΤΟ ΕΡΓΟ" },
       { href: "/locations", title: "ΠΕΡΙΟΧΕΣ ΕΦΑΡΜΟΓΗΣ" },
       { href: "/", title: "ΝΕΑ & ΕΚΔΗΛΩΣΕΙΣ" },
       { href: "/contact", title: "ΕΠΙΚΟΙΝΩΝΙΑ" },
@@ -15,7 +15,7 @@ module.exports = [
     path: "/en/",
     nav: [
       { href: "/en/about", title: "ABOUT US" },
-      { href: "/en/", title: "PROJECT" },
+      { href: "/en/project", title: "PROJECT" },
       { href: "/en/locations", title: "APPLYING AREAS" },
       { href: "/en/", title: "NEWS" },
       { href: "/contact", title: "CONTACT" },

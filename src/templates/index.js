@@ -12,12 +12,11 @@ import watermark3 from "../img/watermark-3.png";
 export const IndexPageTemplate = ({
   heroImage,
   heroHeading,
-  projectHeading,
-  projectDescription,
   locations,
   latest,
   locationPosts,
-  latestPosts
+  latestPosts,
+  project,
 }) => {
   return (
     <>
@@ -31,13 +30,13 @@ export const IndexPageTemplate = ({
               </div>
               <div className="column has-text-right is-4">
                 <h3 className="has-text-weight-light is-size-1 is-size-2-mobile">
-                  {projectHeading}
+                  {project.title}
                 </h3>
                 <p
                   style={{ lineHeight: "2.5rem" }}
                   className="is-size-5 is-size-6 has-text-weight-semibold"
                 >
-                  {projectDescription}
+                  {project.description}
                 </p>
                 <Link to="/about">
                   <button className="button is-primary">READ MORE</button>
@@ -75,7 +74,7 @@ export const IndexPageTemplate = ({
         >
           {latest.description}
         </p>
-        <UpcomingRoll {...latestPosts}/>
+        <UpcomingRoll {...latestPosts} />
       </div>
     </>
   );
@@ -83,20 +82,19 @@ export const IndexPageTemplate = ({
 
 const IndexPage = ({ data }) => {
   const { frontmatter: content } = data.content;
-  console.log(data)
   const heroImage = getImage(content.image) || content.image;
+  console.log(data.project.frontmatter);
   return (
     <Layout>
       <Navbar lang={content.language} slug={data.page.fields.slug} />
       <IndexPageTemplate
         heroImage={heroImage}
         heroHeading={content.heroHeading}
-        projectHeading={content.projectHeading}
-        projectDescription={content.projectDescription}
         locations={content.locations}
         latest={content.latest}
         locationPosts={data.locationPosts}
         latestPosts={data.latestPosts}
+        project={data.project.frontmatter}
       />
     </Layout>
   );
@@ -127,8 +125,6 @@ export const indexQuery = graphql`
             gatsbyImageData(quality: 100, layout: FULL_WIDTH)
           }
         }
-        projectHeading
-        projectDescription
         locations {
           title
           description
@@ -137,6 +133,18 @@ export const indexQuery = graphql`
           title
           description
         }
+      }
+    }
+    project: markdownRemark(
+      frontmatter: {
+        type: { eq: 1 }
+        templateKey: { eq: "templates/project" }
+        language: { eq: $language }
+      }
+    ) {
+      frontmatter {
+        title
+        description
       }
     }
     locationPosts: allMarkdownRemark(

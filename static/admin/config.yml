@@ -36,12 +36,6 @@ collections:
           - { label: Language, name: language, widget: hidden, default: en }
           - { label: Hero Heading, name: heroHeading, widget: string }
           - { label: Hero Image, name: image, widget: image }
-          - { label: Project Title, name: projectHeading, widget: string }
-          - {
-              label: Project Description,
-              name: projectDescription,
-              widget: text,
-            }
           - {
               label: Locations,
               name: locations,
@@ -163,6 +157,23 @@ collections:
           - { label: Type, name: type, widget: hidden, default: 1 }
           - { label: Language, name: language, widget: hidden, default: gr }
           - { label: Title, name: title, widget: string }
+
+      # Projects Page EN
+      - file: "content/en/main-pages/project.md"
+        label: Project
+        name: projectEN
+        identifier_field: name
+        fields:
+          - {
+              label: Template Key,
+              name: templateKey,
+              widget: hidden,
+              default: templates/project,
+            }
+          - { label: Type, name: type, widget: hidden, default: 1 }
+          - { label: Language, name: language, widget: hidden, default: en }
+          - { label: Title, name: title, widget: string }
+          - { label: Description, name: description, widget: string }
   #Location EN
   - name: "locationEn"
     label: "Location (english)"
@@ -266,7 +277,7 @@ collections:
     editor:
       preview: true
     files:
-      #Home
+      #Home GR
       - file: "content/gr/main-pages/index.md"
         label: Index
         name: indexGR
@@ -277,12 +288,6 @@ collections:
           - { label: Language, name: language, widget: hidden, default: gr }
           - { label: Hero Heading, name: heroHeading, widget: string }
           - { label: Hero Image, name: image, widget: image }
-          - { label: Project Title, name: projectHeading, widget: string }
-          - {
-              label: Project Description,
-              name: projectDescription,
-              widget: text,
-            }
           - {
               label: Locations,
               name: locations,
@@ -303,7 +308,7 @@ collections:
                   { label: Description, name: description, widget: text },
                 ],
             }
-      #About Page
+      #About Page GR
       - file: "content/gr/main-pages/about.md"
         label: "About"
         name: "aboutGR"
@@ -404,6 +409,23 @@ collections:
           - { label: Type, name: type, widget: hidden, default: 1 }
           - { label: Language, name: language, widget: hidden, default: gr }
           - { label: Title, name: title, widget: string }
+
+      # Projects Page GR
+      - file: "content/gr/main-pages/project.md"
+        label: Project
+        name: projectGR
+        identifier_field: name
+        fields:
+          - {
+              label: Template Key,
+              name: templateKey,
+              widget: hidden,
+              default: templates/project,
+            }
+          - { label: Type, name: type, widget: hidden, default: 1 }
+          - { label: Language, name: language, widget: hidden, default: gr }
+          - { label: Title, name: title, widget: string }
+          - { label: Description, name: description, widget: string }
 
   #Location gr
   - name: "locationGr"
