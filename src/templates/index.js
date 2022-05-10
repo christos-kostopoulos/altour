@@ -137,7 +137,7 @@ export const indexQuery = graphql`
     }
     project: markdownRemark(
       frontmatter: {
-        type: { eq: 1 }
+        type: { eq: 0 }
         templateKey: { eq: "templates/project" }
         language: { eq: $language }
       }

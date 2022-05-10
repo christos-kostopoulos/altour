@@ -18,7 +18,7 @@ const ProjectPage = ({ data }) => {
       <Navbar lang={page.language} slug={data.page.fields.slug} />
       <div className="content">
         <FullWidthImage img={heroImage} />
-        <section className="section section--gradient arrow-section-white">
+        <section className="section section--gradient arrow-section-white"  style={{ borderBottom: "1px solid rgba(0,0,0,0.1)" }}>
           <div className="container">
             <h2 className="title  has-text-weight-light is-bold-light is-size-2 is-size-3-mobile">
               {page.title}
