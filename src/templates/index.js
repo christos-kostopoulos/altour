@@ -5,7 +5,7 @@ import { getImage } from "gatsby-plugin-image";
 import Layout from "../components/Layout";
 import Navbar from "../components/Navbar";
 import FullWidthImage from "../components/FullWidthImage";
-// import LocationRoll from "../components/LocationRoll/LocationRoll";
+import LocationRoll from "../components/LocationRoll/LocationRoll";
 import watermark3 from "../img/watermark-3.png";
 
 export const IndexPageTemplate = ({
@@ -15,7 +15,9 @@ export const IndexPageTemplate = ({
   projectDescription,
   locations,
   latest,
+  locationPosts,
 }) => {
+
   return (
     <>
       <FullWidthImage img={heroImage} title={heroHeading} />
@@ -54,7 +56,7 @@ export const IndexPageTemplate = ({
         >
           {locations.description}
         </p>
-        {/* <LocationRoll /> */}
+        <LocationRoll {...locationPosts} />
       </div>
       <div
         className="mt-2 p-6 has-background-primary latest-news-section"
@@ -80,7 +82,7 @@ export const IndexPageTemplate = ({
 
 const IndexPage = ({ data }) => {
   const { frontmatter: content } = data.content;
-
+  
   const heroImage = getImage(content.image) || content.image;
   return (
     <Layout>
@@ -92,6 +94,7 @@ const IndexPage = ({ data }) => {
         projectDescription={content.projectDescription}
         locations={content.locations}
         latest={content.latest}
+        locationPosts={data.locationPosts}
       />
     </Layout>
   );
@@ -131,6 +134,31 @@ export const indexQuery = graphql`
         latest {
           title
           description
+        }
+      }
+    }
+    locationPosts: allMarkdownRemark(
+      filter: {
+        frontmatter: {
+          language: { eq: $language }
+          contentType: { eq: "location" }
+        }
+      }
+    ) {
+      edges {
+        node {
+          id
+          fields {
+            slug
+          }
+          frontmatter {
+            featuredimage {
+              childImageSharp {
+                gatsbyImageData(quality: 100, layout: CONSTRAINED)
+              }
+            }
+            title
+          }
         }
       }
     }

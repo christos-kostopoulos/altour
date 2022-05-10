@@ -54,11 +54,11 @@ collections:
               ],
             }
      
-  #Note EN
+  #Location EN
   - name: 'locationEn'
-    label: 'Note (english)'
-    folder: 'content/en/note'
-    filter: { field: contentType, value: note }
+    label: 'Location (english)'
+    folder: 'content/en/location'
+    filter: { field: contentType, value: location }
     create: true
     slug: '{{slug}}'
     identifier_field: slug
@@ -67,7 +67,7 @@ collections:
           label: Template Key,
           name: templateKey,
           widget: hidden,
-          default: templates/note,
+          default: templates/location,
         }
       - { label: Slug, name: slug, widget: string }
       - { label: Language, name: language, widget: hidden, default: en }
@@ -75,7 +75,7 @@ collections:
           label: Content Type,
           name: contentType,
           widget: hidden,
-          default: note,
+          default: location,
         }
       - { label: "Featured Image", name: "featuredimage", widget: image }
       - {
@@ -104,6 +104,7 @@ collections:
     identifier_field: name
     label: 'Main Pages (deutsch)'
     filter: { field: language, value: de }
+    
     editor:
       preview: true
     files:
@@ -141,11 +142,12 @@ collections:
                 ],
             }
      
-  #Note DE
+  #Location DE
   - name: 'locationDe'
-    label: 'Note (deutsch)'
-    folder: 'content/de/note'
-    filter: { field: contentType, value: note }
+    label: 'Location (deutsch)'
+    folder: 'content/de/location'
+    filter: { field: contentType, value: location }
+    create: true
     slug: '{{slug}}'
     identifier_field: slug
     fields:
@@ -153,7 +155,7 @@ collections:
           label: Template Key,
           name: templateKey,
           widget: hidden,
-          default: templates/note,
+          default: templates/location,
         }
       - { label: Slug, name: slug, widget: string }
       - { label: Language, name: language, widget: hidden, default: de }
@@ -161,7 +163,7 @@ collections:
           label: Content Type,
           name: contentType,
           widget: hidden,
-          default: note,
+          default: location,
         }
       - { label: "Featured Image", name: "featuredimage", widget: image }
       - {
