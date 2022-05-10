@@ -1,6 +1,6 @@
 const path = require('path')
 const _ = require('lodash')
-const { fmImagesToRelative } = require('gatsby-remark-relative-images')
+const { fmImagesToRelative } = require('gatsby-remark-relative-images-v2')
 const slugHandler = require('./src/api/slugHandler')
 
 exports.createPages = ({ actions, graphql }) => {

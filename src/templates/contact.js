@@ -1,5 +1,6 @@
 import * as React from "react";
 import { navigate } from "gatsby-link";
+import { graphql, Link } from "gatsby";
 import Layout from "../components/Layout";
 import { StaticImage } from "gatsby-plugin-image";
 import Navbar from "../components/Navbar";
@@ -11,7 +12,7 @@ function encode(data) {
 
 export default function Contact({ data }) {
   const [state, setState] = React.useState({ isValidated: false });
-  //   const { frontmatter: page } = data.page;
+    const { frontmatter: page } = data.page;
   const handleChange = (e) => {
     setState({ [e.target.name]: e.target.value });
   };
@@ -33,7 +34,7 @@ export default function Contact({ data }) {
   console.log(data);
   return (
     <Layout>
-      {/* <Navbar lang={page.language} slug={data.page.fields.slug} /> */}
+      <Navbar lang={page.language} slug={data.page.fields.slug} />
       <StaticImage
         src="../img/pool2.jpg"
         alt="contact"

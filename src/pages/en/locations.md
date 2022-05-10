@@ -11,4 +11,3 @@ image: /img/areas.jpg
 <li><strong>Greece: </strong>Regional Units of Grevena, Kastoria, Florina, Arta, Thesprotia, Ioannina, Preveza, Zakynthos, Corfu, Cephalonia and Lefkada
 <li><strong>Albania:</strong>  Vlorë, Korçë, Gjirokaster, Berat
 </ul>
-

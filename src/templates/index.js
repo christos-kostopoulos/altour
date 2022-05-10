@@ -83,7 +83,7 @@ export const IndexPageTemplate = ({
 const IndexPage = ({ data }) => {
   const { frontmatter: content } = data.content;
   const heroImage = getImage(content.image) || content.image;
-  console.log(data.project.frontmatter);
+
   return (
     <Layout>
       <Navbar lang={content.language} slug={data.page.fields.slug} />
