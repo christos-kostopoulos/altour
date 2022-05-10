@@ -268,12 +268,12 @@ const AboutPage = ({ data }) => {
   return (
     <Layout>
       <Navbar lang={content.language} slug={data.page.fields.slug} />
-      <AboutPageTemplate
+      {/* <AboutPageTemplate
         content={data.content.html}
         contentComponent={HTMLContent}
         image={content.image}
         intro={content.intro}
-      />
+      /> */}
     </Layout>
   );
 };

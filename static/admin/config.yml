@@ -86,9 +86,9 @@ collections:
                 [
                   { label: Heading, name: heading, widget: string },
                   { label: Image, name: image1, widget: image },
+                  { label: "Body", name: "body", widget: "markdown" },
                 ],
             }
-          - { label: "Body", name: "body", widget: "markdown" }
 
   #Location EN
   - name: "locationEn"
