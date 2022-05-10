@@ -16,7 +16,7 @@ module.exports = [
     nav: [
       { href: "/en/about", title: "ABOUT US" },
       { href: "/en/", title: "PROJECT" },
-      { href: "/en/", title: "ΠΕΡΙΟΧΕΣ ΕΦΑΡΜΟΓΗΣ" },
+      { href: "/en/", title: "APPLYING AREAS" },
       { href: "/en/", title: "NEWS" },
       { href: "/contact", title: "CONTACT" },
     ],

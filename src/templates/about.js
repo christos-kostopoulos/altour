@@ -67,9 +67,9 @@ export const AboutPageTemplate = ({
           </div>
         </div>
       </section>
-      <section className="mt-5">
+      <section className="mt-5 p-5">
         <div className="container">
-          <h3 className="has-text-weight-semibold has-text-centered is-size-2 pt-5">
+          <h3 className="has-text-weight-semibold has-text-centered is-size-2 is-size-4-mobile pt-5">
             {thermalSprings.heading}
           </h3>
           <ReactMarkdown>{thermalSprings.body}</ReactMarkdown>
@@ -88,7 +88,7 @@ export const AboutPageTemplate = ({
           </div>
         </div>
       </section>
-      <section className="has-background-primary mt-5 pb-5 pt-5">
+      <section className="has-background-primary mt-5 p-5">
         <div className="container">
           <div className="columns">
             <div className="column is-8">

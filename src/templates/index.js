@@ -29,7 +29,7 @@ export const IndexPageTemplate = ({
                 <img src={watermark3} alt="Facebook" />
               </div>
               <div className="column has-text-right is-4">
-                <h3 className="has-text-weight-light is-size-1 is-size-2">
+                <h3 className="has-text-weight-light is-size-1 is-size-2-mobile">
                   {projectHeading}
                 </h3>
                 <p
