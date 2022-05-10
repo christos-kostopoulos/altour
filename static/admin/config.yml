@@ -89,6 +89,47 @@ collections:
                   { label: "Body", name: "body", widget: "markdown" },
                 ],
             }
+            - {
+              label: Greek Ministry,
+              name: sectionMinistry,
+              widget: object,
+              fields:
+                [
+                  { label: Heading, name: heading, widget: string },
+                  { label: Image, name: image, widget: image },
+                  { label: Body, name: body, widget: markdown },
+                ],
+            }
+          - {
+              label: Thermal Springs,
+              name: thermalSprings,
+              widget: object,
+              fields:
+                [
+                  { label: Heading, name: heading, widget: string },
+                  { label: Body, name: body, widget: markdown },
+                ],
+            }
+          - {
+              label: Goals,
+              name: goals,
+              widget: object,
+              fields:
+                [
+                  { label: Heading, name: heading, widget: string },
+                  { label: Body, name: body, widget: markdown },
+                ],
+            }
+          - {
+              label: Sustainable,
+              name: sustainable,
+              widget: object,
+              fields:
+                [
+                  { label: Heading, name: heading, widget: string },
+                  { label: Body, name: body, widget: markdown },
+                ],
+            }
 
   #Location EN
   - name: "locationEn"
@@ -204,10 +245,51 @@ collections:
               fields:
                 [
                   { label: Heading, name: heading, widget: string },
-                  { label: Image, name: image1, widget: image },
+                  { label: Image, name: image, widget: image },
+                  { label: Body, name: body, widget: markdown },
                 ],
             }
-          - { label: "Body", name: "body", widget: "markdown" }
+          - {
+              label: Greek Ministry,
+              name: sectionMinistry,
+              widget: object,
+              fields:
+                [
+                  { label: Heading, name: heading, widget: string },
+                  { label: Image, name: image, widget: image },
+                  { label: Body, name: body, widget: markdown },
+                ],
+            }
+          - {
+              label: Thermal Springs,
+              name: thermalSprings,
+              widget: object,
+              fields:
+                [
+                  { label: Heading, name: heading, widget: string },
+                  { label: Body, name: body, widget: markdown },
+                ],
+            }
+          - {
+              label: Goals,
+              name: goals,
+              widget: object,
+              fields:
+                [
+                  { label: Heading, name: heading, widget: string },
+                  { label: Body, name: body, widget: markdown },
+                ],
+            }
+          - {
+              label: Sustainable,
+              name: sustainable,
+              widget: object,
+              fields:
+                [
+                  { label: Heading, name: heading, widget: string },
+                  { label: Body, name: body, widget: markdown },
+                ],
+            }
 
   #Location gr
   - name: "locationGr"

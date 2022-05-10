@@ -4,7 +4,7 @@ import { AboutPageTemplate } from "../../templates/about";
 
 const AboutPagePreview = ({ entry, getAsset, widgetFor }) => (
   <AboutPageTemplate
-    content={widgetFor("body")}
+    // content={widgetFor("body")}
     image={getAsset(entry.getIn(["data", "image"]))}
     intro={{
       heading: entry.getIn(["data", "intro", "heading"]),
@@ -12,6 +12,7 @@ const AboutPagePreview = ({ entry, getAsset, widgetFor }) => (
         image: getAsset(entry.getIn(["data", "intro", "image", "image"])),
         alt: entry.getIn(["data", "intro", "image", "alt"]),
       },
+      body: entry.getIn(["data", "intro", "body"]),
     }}
   />
 );

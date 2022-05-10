@@ -4,20 +4,16 @@ import { graphql } from "gatsby";
 import { getImage, GatsbyImage } from "gatsby-plugin-image";
 import Layout from "../components/Layout";
 import watermark from "../img/watermark-about.svg";
-import Content, { HTMLContent } from "../components/Content";
+
+import ReactMarkdown from "react-markdown";
 import FullWidthImage from "../components/FullWidthImage";
 import { StaticImage } from "gatsby-plugin-image";
 import Navbar from "../components/Navbar";
 // eslint-disable-next-line
-export const AboutPageTemplate = ({
-  content,
-  contentComponent,
-  image,
-  intro,
-}) => {
+export const AboutPageTemplate = ({ image, intro }) => {
   const heroImage = getImage(image) || image;
   const rightImage = getImage(intro.image) || intro.image;
-  const PageContent = contentComponent || Content;
+
 
   return (
     <div className="content">
@@ -32,7 +28,7 @@ export const AboutPageTemplate = ({
               >
                 {intro.heading}
               </h2>
-              <PageContent className="content" content={content} />
+              <ReactMarkdown>{intro.body}</ReactMarkdown>
             </div>
             <div className="column is-4">
               <GatsbyImage
@@ -263,17 +259,11 @@ AboutPageTemplate.propTypes = {
 
 const AboutPage = ({ data }) => {
   const { frontmatter: content } = data.content;
-
-  console.log(data);
+ 
   return (
     <Layout>
       <Navbar lang={content.language} slug={data.page.fields.slug} />
-      {/* <AboutPageTemplate
-        content={data.content.html}
-        contentComponent={HTMLContent}
-        image={content.image}
-        intro={content.intro}
-      /> */}
+      <AboutPageTemplate image={content.image} intro={content.intro} />
     </Layout>
   );
 };
@@ -300,7 +290,6 @@ export const aboutPageQuery = graphql`
         language: { eq: $language }
       }
     ) {
-      html
       frontmatter {
         language
         image {
@@ -310,6 +299,7 @@ export const aboutPageQuery = graphql`
         }
         intro {
           heading
+          body
           image {
             childImageSharp {
               gatsbyImageData(quality: 100, layout: CONSTRAINED)
