@@ -5,7 +5,7 @@ import { graphql } from 'gatsby'
 import Layout from '../components/Layout'
 import Navbar from '../components/Navbar'
 
-const NotePage = ({ data }) => {
+const LocationPage = ({ data }) => {
   const { frontmatter: note } = data.markdownRemark
   return (
     <Layout>
@@ -20,7 +20,7 @@ const NotePage = ({ data }) => {
   )
 }
 
-export default NotePage
+export default LocationPage
 
 export const noteQuery = graphql`
   query noteById($id: String!) {

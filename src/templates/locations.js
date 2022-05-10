@@ -7,7 +7,7 @@ import Layout from "../components/Layout";
 import Navbar from "../components/Navbar";
 import Content, { HTMLContent } from "../components/Content";
 
-const JournalPage = ({ data }) => {
+const LocationsPage = ({ data }) => {
   const PageContent = HTMLContent || Content;
   const { frontmatter: page } = data.page;
   const { edges: blogs } = data.blogs;
@@ -48,9 +48,9 @@ const JournalPage = ({ data }) => {
   );
 };
 
-export default JournalPage;
+export default LocationsPage;
 
-export const journalPageQuery = graphql`
+export const LocationsPageQuery = graphql`
   query journalById($id: String!, $language: String!) {
     page: markdownRemark(id: { eq: $id }) {
       fields {

@@ -70,7 +70,7 @@ export const IndexPageTemplate = ({
           {latest.title}
         </h3>
         <p
-          className="has-text-weight-light has-text-centered has-text-white p-2 mb-2"
+          className="has-text-centered has-text-white p-2 mb-2 latest-news-section-description"
           style={{ margin: "0 auto", position: "relative" }}
         >
           {latest.description}
@@ -185,6 +185,7 @@ export const indexQuery = graphql`
               }
             }
             title
+            description
           }
         }
       }

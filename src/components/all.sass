@@ -219,11 +219,14 @@ footer.footer
   background-size: 110%
 
 @import "~bulma"
-
+.latest-news-section-description
+  width: 60%
 // responsiveness
 +tablet-only
   .blog-list-item .featured-thumbnail
     flex-basis: 50%
+  .latest-news-section-description
+     width: 80%
 
 +mobile
   .blog-list-item header
@@ -234,3 +237,5 @@ footer.footer
     margin: 0 0 1em
   footer img
     width: 80%
+  .latest-news-section-description
+     width: 100%

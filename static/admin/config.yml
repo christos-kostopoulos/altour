@@ -131,7 +131,7 @@ collections:
                 ],
             }
 
-          #Locations ana applying areas
+      #Locations and applying areas
       - file: "content/en/main-pages/locations.md"
         label: Locations
         name: locationsEN
@@ -148,6 +148,21 @@ collections:
           - { label: Title, name: title, widget: string }
           - { label: SEO Description, name: description, widget: text }
 
+      # Contact Page EN
+      - file: "content/en/main-pages/contact.md"
+        label: Contact
+        name: contactEN
+        identifier_field: name
+        fields:
+          - {
+              label: Template Key,
+              name: templateKey,
+              widget: hidden,
+              default: templates/contact,
+            }
+          - { label: Type, name: type, widget: hidden, default: 1 }
+          - { label: Language, name: language, widget: hidden, default: gr }
+          - { label: Title, name: title, widget: string }
   #Location EN
   - name: "locationEn"
     label: "Location (english)"
@@ -373,6 +388,22 @@ collections:
           - { label: Language, name: language, widget: hidden, default: gr }
           - { label: Title, name: title, widget: string }
           - { label: SEO Description, name: description, widget: text }
+
+      # Contact Page GR
+      - file: "content/gr/main-pages/contact.md"
+        label: Contact
+        name: contactGR
+        identifier_field: name
+        fields:
+          - {
+              label: Template Key,
+              name: templateKey,
+              widget: hidden,
+              default: templates/contact,
+            }
+          - { label: Type, name: type, widget: hidden, default: 1 }
+          - { label: Language, name: language, widget: hidden, default: gr }
+          - { label: Title, name: title, widget: string }
 
   #Location gr
   - name: "locationGr"
