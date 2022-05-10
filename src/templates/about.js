@@ -29,8 +29,7 @@ export const AboutPageTemplate = ({
           <div className="columns">
             <div className="column is-8">
               <h2
-                style={{ fontSize: "3.2rem" }}
-                className="title  has-text-weight-light is-bold-light"
+                className="title  has-text-weight-light is-bold-light is-size-2 is-size-3-mobile"
               >
                 {intro.heading}
               </h2>

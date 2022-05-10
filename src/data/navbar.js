@@ -5,7 +5,7 @@ module.exports = [
     nav: [
       { href: "/about", title: "ΣΧΕΤΙΚΑ ΜΕ ΕΜΑΣ" },
       { href: "/", title: " ΤΟ ΕΡΓΟ" },
-      { href: "/", title: "ΠΕΡΙΟΧΕΣ ΕΦΑΡΜΟΓΗΣ" },
+      { href: "/locations", title: "ΠΕΡΙΟΧΕΣ ΕΦΑΡΜΟΓΗΣ" },
       { href: "/", title: "ΝΕΑ & ΕΚΔΗΛΩΣΕΙΣ" },
       { href: "/contact", title: "ΕΠΙΚΟΙΝΩΝΙΑ" },
     ],
@@ -16,7 +16,7 @@ module.exports = [
     nav: [
       { href: "/en/about", title: "ABOUT US" },
       { href: "/en/", title: "PROJECT" },
-      { href: "/en/", title: "APPLYING AREAS" },
+      { href: "/en/locations", title: "APPLYING AREAS" },
       { href: "/en/", title: "NEWS" },
       { href: "/contact", title: "CONTACT" },
     ],
