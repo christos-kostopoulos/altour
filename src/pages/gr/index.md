@@ -2,7 +2,7 @@
 templateKey: templates/index
 type: 0
 slug: /
-language: de
+language: gr
 ---
 
 STATUS: Online, Alles klar </br>

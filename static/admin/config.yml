@@ -97,26 +97,26 @@ collections:
           format: YYYY-MM-DD,
           default: '',
         }
-  #----------------------------------------------DE
+  #----------------------------------------------gr
 
-  # Main Pages DE
+  # Main Pages gr
   - name: 'mainPageDe'
     identifier_field: name
-    label: 'Main Pages (deutsch)'
-    filter: { field: language, value: de }
+    label: 'Main Pages (Greek)'
+    filter: { field: language, value: gr }
     
     editor:
       preview: true
     files:
       #Home
-      - file: 'content/de/main-pages/index.md'
+      - file: 'content/gr/main-pages/index.md'
         label: Index
-        name: indexDE
+        name: indexGR
         identifier_field: name
         fields:
           - { label: Template Key, name: templateKey, widget: hidden }
           - { label: Type, name: type, widget: hidden, default: 1 }
-          - { label: Language, name: language, widget: hidden, default: de }
+          - { label: Language, name: language, widget: hidden, default: gr }
           - { label: Hero Heading, name: heroHeading, widget: string }
           - { label: Hero Image, name: image, widget: image }
           - { label: Project Title, name: projectHeading, widget: string }
@@ -142,10 +142,10 @@ collections:
                 ],
             }
      
-  #Location DE
-  - name: 'locationDe'
-    label: 'Location (deutsch)'
-    folder: 'content/de/location'
+  #Location gr
+  - name: 'locationGr'
+    label: 'Location (Greek)'
+    folder: 'content/gr/location'
     filter: { field: contentType, value: location }
     create: true
     slug: '{{slug}}'
@@ -158,7 +158,7 @@ collections:
           default: templates/location,
         }
       - { label: Slug, name: slug, widget: string }
-      - { label: Language, name: language, widget: hidden, default: de }
+      - { label: Language, name: language, widget: hidden, default: gr }
       - {
           label: Content Type,
           name: contentType,

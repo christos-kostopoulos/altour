@@ -1,7 +1,7 @@
 ---
 templateKey: templates/location
 slug: ioannina
-language: de
+language: gr
 contentType: location
 featuredimage: /img/ioannina.jpg
 title: Ioannina

@@ -1,7 +1,7 @@
 ---
 templateKey: templates/index
 type: 1
-language: de
+language: gr
 heroHeading: Willkommen bei Robco Industries (TM) Termlink
 image: /img/waterfall.jpg
 projectHeading: το έργο

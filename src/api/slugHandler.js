@@ -2,8 +2,8 @@
 const _ = require('lodash')
 
 module.exports = slugHandler = (language, templateKey, slug) => {
-  if (language === 'de') {
-    return _.kebabCase(slug).length === 0 ? '/de/' : `/de/${_.kebabCase(slug)}/`
+  if (language === 'en') {
+    return _.kebabCase(slug).length === 0 ? '/en/' : `/en/${_.kebabCase(slug)}/`
   } else {
     return _.kebabCase(slug).length === 0 ? '/' : `/${_.kebabCase(slug)}/`
   }

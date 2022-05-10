@@ -7,10 +7,11 @@ import './LanguageSwitcher.scss'
 
 const LanguageSwitcher = ({ slug }) => {
   const componentStyle = 'LanguageSwitcher'
-  let activeLanguage = slug.startsWith('/de/') ? 'de' : 'en'
-  let url = slug.startsWith('/de/')
-    ? slug.replace('/de/', '/')
-    : slug.replace('/', '/de/')
+  console.log(slug)
+  let activeLanguage = slug.startsWith('/en/') ? 'en' : 'gr'
+  let url = slug.startsWith('/en/')
+    ? slug.replace('/en/', '/')
+    : slug.replace('/', '/en/')
   return (
     <div className={componentStyle}>
       {nav.map(item => (
