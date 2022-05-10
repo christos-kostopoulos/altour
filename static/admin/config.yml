@@ -191,6 +191,49 @@ collections:
           format: YYYY-MM-DD,
           default: "",
         }
+
+  - name: "upcomingEn"
+    label: "Upcoming (english)"
+    folder: "content/en/upcoming"
+    filter: { field: contentType, value: upcoming }
+    create: true
+    slug: "{{slug}}"
+    identifier_field: slug
+    fields:
+      - {
+          label: Template Key,
+          name: templateKey,
+          widget: hidden,
+          default: templates/location,
+        }
+      - { label: Slug, name: slug, widget: string }
+      - { label: Language, name: language, widget: hidden, default: en }
+      - {
+          label: Content Type,
+          name: contentType,
+          widget: hidden,
+          default: location,
+        }
+      - { label: "Featured Image", name: "featuredimage", widget: image }
+      - {
+          label: Title,
+          name: title,
+          widget: string,
+          pattern: [".{0,80}", "Oopsy, no more that 80 characters"],
+        }
+      - {
+          label: Body,
+          name: body,
+          widget: markdown,
+          default: "Be interesting but not annoying",
+        }
+      - {
+          label: Date,
+          name: date,
+          widget: date,
+          format: YYYY-MM-DD,
+          default: "",
+        }
   #----------------------------------------------gr
 
   # Main Pages gr
@@ -356,6 +399,50 @@ collections:
           pattern: [".{0,80}", "Oopsy, no more that 80 characters"],
         }
       - { label: Body, name: body, widget: markdown }
+      - {
+          label: Date,
+          name: date,
+          widget: date,
+          format: YYYY-MM-DD,
+          default: "",
+        }
+
+
+  - name: "upcomingGr"
+    label: "Upcoming (Greeek)"
+    folder: "content/gr/upcoming"
+    filter: { field: contentType, value: upcoming }
+    create: true
+    slug: "{{slug}}"
+    identifier_field: slug
+    fields:
+      - {
+          label: Template Key,
+          name: templateKey,
+          widget: hidden,
+          default: templates/location,
+        }
+      - { label: Slug, name: slug, widget: string }
+      - { label: Language, name: language, widget: hidden, default: gr }
+      - {
+          label: Content Type,
+          name: contentType,
+          widget: hidden,
+          default: location,
+        }
+      - { label: "Featured Image", name: "featuredimage", widget: image }
+      - {
+          label: Title,
+          name: title,
+          widget: string,
+          pattern: [".{0,80}", "Oopsy, no more that 80 characters"],
+        }
+      - {
+          label: Body,
+          name: body,
+          widget: markdown,
+          default: "Be interesting but not annoying",
+        }
       - {
           label: Date,
           name: date,
