@@ -7,7 +7,6 @@ import './LanguageSwitcher.scss'
 
 const LanguageSwitcher = ({ slug }) => {
   const componentStyle = 'LanguageSwitcher'
-  console.log(slug)
   let activeLanguage = slug.startsWith('/en/') ? 'en' : 'gr'
   let url = slug.startsWith('/en/')
     ? slug.replace('/en/', '/')

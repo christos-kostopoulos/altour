@@ -7,6 +7,7 @@ import watermark from "../img/watermark-about.svg";
 import Content, { HTMLContent } from "../components/Content";
 import FullWidthImage from "../components/FullWidthImage";
 import { StaticImage } from "gatsby-plugin-image";
+import Navbar from "../components/Navbar";
 // eslint-disable-next-line
 export const AboutPageTemplate = ({
   content,
@@ -29,9 +30,7 @@ export const AboutPageTemplate = ({
                 style={{ fontSize: "3.2rem" }}
                 className="title  has-text-weight-light is-bold-light"
               >
-                {/* {heading} */}
-                Υπουργείο Τουρισμού <br />
-                και Περιβάλλοντος Αλβανίας
+                {intro.heading}
               </h2>
               <PageContent className="content" content={content} />
             </div>
@@ -264,14 +263,13 @@ AboutPageTemplate.propTypes = {
 
 const AboutPage = ({ data }) => {
   const { frontmatter: content } = data.content;
-    
-  
-  console.log(content, data);
+
+  console.log(data);
   return (
     <Layout>
-      {/* <Navbar lang={content.language} slug={data.page.fields.slug} /> */}
+      <Navbar lang={content.language} slug={data.page.fields.slug} />
       <AboutPageTemplate
-        content={data.page.html}
+        content={data.content.html}
         contentComponent={HTMLContent}
         image={content.image}
         intro={content.intro}
@@ -294,7 +292,6 @@ export const aboutPageQuery = graphql`
       fields {
         slug
       }
-      html
     }
     content: markdownRemark(
       frontmatter: {
@@ -303,7 +300,9 @@ export const aboutPageQuery = graphql`
         language: { eq: $language }
       }
     ) {
+      html
       frontmatter {
+        language
         image {
           childImageSharp {
             gatsbyImageData(quality: 100, layout: FULL_WIDTH)
