@@ -1,20 +1,26 @@
 module.exports = [
   {
-    lang: 'gr',
-    path: '/',
+    lang: "gr",
+    path: "/",
     nav: [
-      { href: '/', title: 'Howdy Partner' },
+      { href: "/about", title: "ΣΧΕΤΙΚΑ ΜΕ ΕΜΑΣ" },
+      { href: "/", title: " ΤΟ ΕΡΓΟ" },
+      { href: "/", title: "ΠΕΡΙΟΧΕΣ ΕΦΑΡΜΟΓΗΣ" },
+      { href: "/", title: "ΝΕΑ & ΕΚΔΗΛΩΣΕΙΣ" },
+      { href: "/contact", title: "ΕΠΙΚΟΙΝΩΝΙΑ" },
     ],
-    logo: 'Welcome to Robco  Industries (TM) Termlink',
   },
   {
-    lang: 'en',
-    path: '/en/',
+    lang: "en",
+    path: "/en/",
     nav: [
-      { href: '/en/', title: 'Hallo Partner' },
+      { href: "/en/about", title: "ABOUT US" },
+      { href: "/en/", title: "PROJECT" },
+      { href: "/en/", title: "ΠΕΡΙΟΧΕΣ ΕΦΑΡΜΟΓΗΣ" },
+      { href: "/en/", title: "NEWS" },
+      { href: "/contact", title: "CONTACT" },
     ],
-    logo: 'Willkommen bei Robco Industries (TM) Termlink',
   },
-]
+];
 
 // todo: add journal page

@@ -63,14 +63,14 @@ export const IndexPageTemplate = ({
         style={{ position: "relative" }}
       >
         <h3
-          className="has-text-weight-light is-size-1 has-text-centered has-text-white"
+          className="has-text-weight-light is-size-1 is-size-3-mobile has-text-centered has-text-white"
           style={{ position: "relative" }}
         >
           {latest.title}
         </h3>
         <p
           className="has-text-weight-light has-text-centered has-text-white p-2 mb-2"
-          style={{ width: "60%", margin: "0 auto", position: "relative" }}
+          style={{ margin: "0 auto", position: "relative" }}
         >
           {latest.description}
         </p>
