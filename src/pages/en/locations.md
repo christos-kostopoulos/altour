@@ -6,8 +6,9 @@ language: en
 title: Applying Areas
 image: /img/areas.jpg
 ---
-STATUS: Online, All clear </br>
-ADMIN: Turret Defence System </br>
-UNITS CONNECTED: 2 </br>
 
-Please, choose the action above
+<ul>
+<li><strong>Greece: </strong>Regional Units of Grevena, Kastoria, Florina, Arta, Thesprotia, Ioannina, Preveza, Zakynthos, Corfu, Cephalonia and Lefkada
+<li><strong>Albania:</strong>  Vlorë, Korçë, Gjirokaster, Berat
+</ul>
+

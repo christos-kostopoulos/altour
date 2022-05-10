@@ -43,31 +43,50 @@ module.exports = {
         defaultQuality: 80,
       },
     },
-    'gatsby-transformer-sharp',
+    `gatsby-plugin-image`,
+    "gatsby-plugin-sharp",
+    "gatsby-transformer-sharp",
     {
-      resolve: `gatsby-transformer-remark`,
+      resolve: "gatsby-transformer-remark",
       options: {
         plugins: [
-          // netlifyCmsPaths, // Including in your Remark plugins will transform any paths in your markdown body.
           {
-            resolve: `gatsby-remark-images`,
+            resolve: "gatsby-remark-relative-images",
+            options: {
+              name: "uploads",
+            },
+          },
+          {
+            resolve: "gatsby-remark-images",
             options: {
               // It's important to specify the maxWidth (in pixels) of
               // the content container as this plugin uses this as the
               // base for generating different widths of each image.
-              maxWidth: 1200,
-              backgroundColor: 'transparent', // required to display blurred image first
+              maxWidth: 2048,
+            },
+          },
+          {
+            resolve: "gatsby-remark-copy-linked-files",
+            options: {
+              destinationDir: "static",
             },
           },
         ],
       },
     },
-    'gatsby-plugin-netlify',
     {
-      resolve: `gatsby-plugin-netlify-cms`,
+      resolve: "gatsby-plugin-netlify-cms",
       options: {
         modulePath: `${__dirname}/src/cms/cms.js`,
       },
     },
+    {
+      resolve: "gatsby-plugin-purgecss", // purges all unused/unreferenced css rules
+      options: {
+        develop: false, // Activates purging in npm run develop
+        purgeOnly: ["/all.sass"], // applies purging only on the bulma css file
+      },
+    }, // must be after other CSS plugins
+    "gatsby-plugin-netlify", // make sure to keep it last in the array
   ],
 }

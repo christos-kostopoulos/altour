@@ -21,21 +21,10 @@ const JournalPage = ({ data }) => {
         <FullWidthImage img={heroImage} />
         <section className="section section--gradient arrow-section-white">
           <div className="container">
-            <div className="columns">
-              <div className="column is-8">
-                <h2 className="title  has-text-weight-light is-bold-light is-size-2 is-size-3-mobile">
-                  {page.title}
-                </h2>
-                <PageContent className="content" content={data.page.html} />
-              </div>
-              <div className="column is-4">
-                {/* <GatsbyImage
-                  image={rightImage}
-                  alt="right image"
-                  style={{ height: "100%" }}
-                /> */}
-              </div>
-            </div>
+            <h2 className="title  has-text-weight-light is-bold-light is-size-2 is-size-3-mobile">
+              {page.title}
+            </h2>
+            <PageContent className="content" content={data.page.html} />
           </div>
         </section>
         {/* <section className="section section--gradient arrow-section-white">
