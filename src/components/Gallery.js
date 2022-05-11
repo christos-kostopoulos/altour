@@ -6,15 +6,14 @@ import SimpleReactLightbox, { SRLWrapper } from "simple-react-lightbox";
 import GalleryImg from "./GalleryImage";
 import useMobile from "../hooks/useMobile";
 
-const defaultSettings = {
-  dots: false,
-  infinite: true,
-  speed: 500,
-  slidesToShow: 1,
-  slidesToScroll: 3,
-};
 const Gallery = ({ gallery }) => {
-  const [settings, setSettings] = useState(defaultSettings);
+  const [settings, setSettings] = useState({
+    dots: false,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 4,
+    slidesToScroll: 1,
+  });
   const { isMobile } = useMobile();
   useEffect(
     () =>

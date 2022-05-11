@@ -53,11 +53,11 @@ const LocationsPage = ({ data }) => {
                           image: location.node.frontmatter.image,
                           alt: `featured image thumbnail for post ${location.node.frontmatter.title}`,
                           width:
-                            location.node.frontmatter.image
-                              .childImageSharp.gatsbyImageData.width,
+                            location.node.frontmatter.image.childImageSharp
+                              .gatsbyImageData.width,
                           height:
-                            location.node.frontmatter.image
-                              .childImageSharp.gatsbyImageData.height,
+                            location.node.frontmatter.image.childImageSharp
+                              .gatsbyImageData.height,
                         }}
                       />
                     </div>
@@ -82,11 +82,11 @@ const LocationsPage = ({ data }) => {
                           image: location.node.frontmatter.image,
                           alt: `featured image thumbnail for post ${location.node.frontmatter.title}`,
                           width:
-                            location.node.frontmatter.image
-                              .childImageSharp.gatsbyImageData.width,
+                            location.node.frontmatter.image.childImageSharp
+                              .gatsbyImageData.width,
                           height:
-                            location.node.frontmatter.image
-                              .childImageSharp.gatsbyImageData.height,
+                            location.node.frontmatter.image.childImageSharp
+                              .gatsbyImageData.height,
                         }}
                       />
                     </div>
@@ -122,7 +122,17 @@ const LocationsPage = ({ data }) => {
               </div>
             </div>
           ) : null}
-          {/* <Gallery gallery={["sarandaporo3.jpg"]} /> */}
+          <Gallery
+            gallery={[
+              "sarandaporo.jpg",
+              "sarandaporo1.jpg",
+              "sarandaporo2.jpg",
+              "sarandaporo3.jpg",
+              "sarandaporo4.jpg",
+              "sarandaporo5.jpg",
+              "sarandaporo6.jpg",
+            ]}
+          />
           {/* Benga PLACE */}
           {benja ? (
             <div className="columns">
@@ -148,9 +158,7 @@ const LocationsPage = ({ data }) => {
             </div>
           ) : null}
 
-          <Gallery
-            gallery={["Benja.jpg", "Benja2.jpg", "Benja3.jpg", "Benja5.jpg"]}
-          />
+          <Gallery gallery={["benja.jpg", "benja1.jpg",  "benja2.jpg",  "benja3.jpg"]} />
         </section>
       </div>
     </Layout>
