@@ -162,7 +162,7 @@ export const indexQuery = graphql`
             slug
           }
           frontmatter {
-            featuredimage {
+            image {
               childImageSharp {
                 gatsbyImageData(quality: 100, layout: CONSTRAINED)
               }
@@ -188,7 +188,7 @@ export const indexQuery = graphql`
             slug
           }
           frontmatter {
-            featuredimage {
+            image {
               childImageSharp {
                 gatsbyImageData(quality: 100, layout: CONSTRAINED)
               }

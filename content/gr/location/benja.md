@@ -3,7 +3,7 @@ templateKey: templates/location
 slug: benja
 language: gr
 contentType: location
-featuredimage: /img/benja.jpg
+image: /img/benja.jpg
 title: Μπέντζα
 country: al
 date: 2022-05-12

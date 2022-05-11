@@ -3,7 +3,7 @@ templateKey: templates/location
 slug: ioannina
 language: gr
 contentType: location
-featuredimage: /img/ioannina.jpg
+image: /img/ioannina.jpg
 title: Ιωάννινα
 country: gr
 date: 2022-05-11

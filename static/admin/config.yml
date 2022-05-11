@@ -197,7 +197,7 @@ collections:
           widget: hidden,
           default: location,
         }
-      - { label: Featured Image, name: featuredimage, widget: image }
+      - { label: Image, name: image, widget: image }
       - {
           label: Title,
           name: title,
@@ -246,7 +246,7 @@ collections:
           widget: hidden,
           default: upcoming,
         }
-      - { label: Featured Image, name: featuredimage, widget: image }
+      - { label: Image, name: image, widget: image }
       - {
           label: Title,
           name: title,
@@ -456,7 +456,7 @@ collections:
           widget: hidden,
           default: location,
         }
-      - { label: Featured Image, name: featuredimage, widget: image }
+      - { label: Image, name: image, widget: image }
       - {
           label: Title,
           name: title,
@@ -500,7 +500,7 @@ collections:
           widget: hidden,
           default: upcoming,
         }
-      - { label: Featured Image, name: featuredimage, widget: image }
+      - { label: Image, name: image, widget: image }
       - {
           label: Title,
           name: title,

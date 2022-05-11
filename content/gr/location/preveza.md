@@ -3,7 +3,7 @@ templateKey: templates/location
 slug: preveza
 language: gr
 contentType: location
-featuredimage: /img/preveza.png
+image: /img/preveza.png
 title: Πρέβεζα
 country: gr
 date: 2022-05-11

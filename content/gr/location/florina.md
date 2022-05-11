@@ -3,7 +3,7 @@ templateKey: templates/location
 slug: florina
 language: gr
 contentType: location
-featuredimage: /img/florina.png
+image: /img/florina.png
 title: Φλώρινα
 country: gr
 date: 2022-05-11

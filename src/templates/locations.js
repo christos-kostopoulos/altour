@@ -50,13 +50,13 @@ const LocationsPage = ({ data }) => {
                     <div className="column is-4">
                       <PreviewCompatibleImage
                         imageInfo={{
-                          image: location.node.frontmatter.featuredimage,
+                          image: location.node.frontmatter.image,
                           alt: `featured image thumbnail for post ${location.node.frontmatter.title}`,
                           width:
-                            location.node.frontmatter.featuredimage
+                            location.node.frontmatter.image
                               .childImageSharp.gatsbyImageData.width,
                           height:
-                            location.node.frontmatter.featuredimage
+                            location.node.frontmatter.image
                               .childImageSharp.gatsbyImageData.height,
                         }}
                       />
@@ -79,13 +79,13 @@ const LocationsPage = ({ data }) => {
                     <div className="column is-4">
                       <PreviewCompatibleImage
                         imageInfo={{
-                          image: location.node.frontmatter.featuredimage,
+                          image: location.node.frontmatter.image,
                           alt: `featured image thumbnail for post ${location.node.frontmatter.title}`,
                           width:
-                            location.node.frontmatter.featuredimage
+                            location.node.frontmatter.image
                               .childImageSharp.gatsbyImageData.width,
                           height:
-                            location.node.frontmatter.featuredimage
+                            location.node.frontmatter.image
                               .childImageSharp.gatsbyImageData.height,
                         }}
                       />
@@ -109,13 +109,13 @@ const LocationsPage = ({ data }) => {
               <div className="column is-4">
                 <PreviewCompatibleImage
                   imageInfo={{
-                    image: sarandaporo.node.frontmatter.featuredimage,
+                    image: sarandaporo.node.frontmatter.image,
                     alt: `featured image thumbnail for post ${sarandaporo.node.frontmatter.title}`,
                     width:
-                      sarandaporo.node.frontmatter.featuredimage.childImageSharp
+                      sarandaporo.node.frontmatter.image.childImageSharp
                         .gatsbyImageData.width,
                     height:
-                      sarandaporo.node.frontmatter.featuredimage.childImageSharp
+                      sarandaporo.node.frontmatter.image.childImageSharp
                         .gatsbyImageData.height,
                   }}
                 />
@@ -129,13 +129,13 @@ const LocationsPage = ({ data }) => {
               <div className="column is-4">
                 <PreviewCompatibleImage
                   imageInfo={{
-                    image: benja.node.frontmatter.featuredimage,
+                    image: benja.node.frontmatter.image,
                     alt: `featured image thumbnail for post ${benja.node.frontmatter.title}`,
                     width:
-                      benja.node.frontmatter.featuredimage.childImageSharp
+                      benja.node.frontmatter.image.childImageSharp
                         .gatsbyImageData.width,
                     height:
-                      benja.node.frontmatter.featuredimage.childImageSharp
+                      benja.node.frontmatter.image.childImageSharp
                         .gatsbyImageData.height,
                   }}
                 />
@@ -187,7 +187,7 @@ export const LocationsPageQuery = graphql`
           }
           html
           frontmatter {
-            featuredimage {
+            image {
               childImageSharp {
                 gatsbyImageData(quality: 100, layout: CONSTRAINED)
               }

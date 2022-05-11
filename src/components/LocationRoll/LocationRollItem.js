@@ -6,17 +6,17 @@ import { Link } from "gatsby";
 const LocationRollItem = (post) => (
   <div className="card">
     <div className="card-image">
-      {post.frontmatter.featuredimage ? (
+      {post.frontmatter.image ? (
         <div className="featured-thumbnail">
           <PreviewCompatibleImage
             imageInfo={{
-              image: post.frontmatter.featuredimage,
+              image: post.frontmatter.image,
               alt: `featured image thumbnail for post ${post.frontmatter.title}`,
               width:
-                post.frontmatter.featuredimage.childImageSharp.gatsbyImageData
+                post.frontmatter.image.childImageSharp.gatsbyImageData
                   .width,
               height:
-                post.frontmatter.featuredimage.childImageSharp.gatsbyImageData
+                post.frontmatter.image.childImageSharp.gatsbyImageData
                   .height,
             }}
           />

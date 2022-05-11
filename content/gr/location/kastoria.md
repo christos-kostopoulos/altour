@@ -3,7 +3,7 @@ templateKey: templates/location
 slug: kastoria
 language: gr
 contentType: location
-featuredimage: /img/kastoria.png
+image: /img/kastoria.png
 title: Καστοριά
 country: gr
 date: 2022-05-11
