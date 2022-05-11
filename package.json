@@ -30,6 +30,7 @@
     "react-helmet": "^6.0.0",
     "react-slick": "^0.29.0",
     "sass": "^1.43.2",
+    "simple-react-lightbox": "^3.6.9-0",
     "slick-carousel": "^1.8.1",
     "uuid": "^8.0.0"
   },

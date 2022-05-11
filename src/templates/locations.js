@@ -7,7 +7,7 @@ import Layout from "../components/Layout";
 import Navbar from "../components/Navbar";
 import PreviewCompatibleImage from "../components/PreviewCompatibleImage";
 import Content, { HTMLContent } from "../components/Content";
-
+import Gallery from "../components/Gallery";
 const LocationsPage = ({ data }) => {
   const PageContent = HTMLContent || Content;
   const { frontmatter: page } = data.page;
@@ -122,7 +122,7 @@ const LocationsPage = ({ data }) => {
               </div>
             </div>
           ) : null}
-
+          <Gallery gallery={["about.jpg", "about_middle.jpg"]} />
           {/* Benga PLACE */}
           {benja ? (
             <div className="columns">
