@@ -122,7 +122,7 @@ const LocationsPage = ({ data }) => {
               </div>
             </div>
           ) : null}
-          <Gallery gallery={["about.jpg", "about_middle.jpg"]} />
+          {/* <Gallery gallery={["sarandaporo3.jpg"]} /> */}
           {/* Benga PLACE */}
           {benja ? (
             <div className="columns">
@@ -147,6 +147,10 @@ const LocationsPage = ({ data }) => {
               </div>
             </div>
           ) : null}
+
+          {/* <Gallery
+            gallery={["Benja.jpg", "Benja2.jpg", "Benja3.jpg", "Benja5.jpg"]}
+          /> */}
         </section>
       </div>
     </Layout>

@@ -4,25 +4,28 @@ import Slider from "react-slick";
 import PropTypes from "prop-types";
 import SimpleReactLightbox, { SRLWrapper } from "simple-react-lightbox";
 import GalleryImg from "./GalleryImage";
+import useMobile from "../hooks/useMobile";
 
 const defaultSettings = {
   dots: false,
   infinite: true,
   speed: 500,
-  slidesToShow: 4,
+  slidesToShow: 1,
   slidesToScroll: 3,
 };
 const Gallery = ({ gallery }) => {
   const [settings, setSettings] = useState(defaultSettings);
-
+  const { isMobile } = useMobile();
   useEffect(
     () =>
+      isMobile &&
       setSettings({
         ...settings,
         slidesToShow: 1,
         slidesToScroll: 1,
+        centerMode: true,
       }),
-    []
+    [isMobile]
   );
   return (
     <div className="mt-2" style={{ marginBottom: "8rem" }}>
