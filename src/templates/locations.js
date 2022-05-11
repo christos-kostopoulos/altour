@@ -12,13 +12,13 @@ const LocationsPage = ({ data }) => {
   const PageContent = HTMLContent || Content;
   const { frontmatter: page } = data.page;
   const { edges: locations } = data.locations;
-
+  console.log(page.language);
   const sarandaporo =
     locations.length > 0 &&
-    locations.find((loc) => loc.node.fields.slug === "/sarandaporo/");
+    locations.find((loc) => loc.node.fields.slug.indexOf("/sarandaporo/") > -1);
   const benja =
     locations.length > 0 &&
-    locations.find((loc) => loc.node.fields.slug === "/benja/");
+    locations.find((loc) => loc.node.fields.slug.indexOf("/benja/") > -1);
   return (
     <Layout>
       <Navbar lang={page.language} slug={data.page.fields.slug} />
@@ -41,7 +41,7 @@ const LocationsPage = ({ data }) => {
             .filter(
               (loc) =>
                 loc.node.frontmatter.country === "gr" &&
-                loc.node.fields.slug !== "/halkidiki/"
+                loc.node.fields.slug.indexOf("/halkidiki/") > -1 === false
             )
             .map((location, index) => {
               return (
@@ -158,7 +158,9 @@ const LocationsPage = ({ data }) => {
             </div>
           ) : null}
 
-          <Gallery gallery={["benja.jpg", "benja1.jpg",  "benja2.jpg",  "benja3.jpg"]} />
+          <Gallery
+            gallery={["benja.jpg", "benja1.jpg", "benja2.jpg", "benja3.jpg"]}
+          />
         </section>
       </div>
     </Layout>

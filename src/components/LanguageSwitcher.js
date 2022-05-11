@@ -35,7 +35,6 @@ const LanguageSwitcher = ({ slug }) => {
                     }`}
                     to={activeLanguage !== 'gr' ? item.path + slug.substring(4) : item.path + slug.substring(1) }
                   >
-                    {" "}
                     <li>
                       <i className={`sl-flag flag-${item.lang}`}>
                         <div id="germany"></div>
