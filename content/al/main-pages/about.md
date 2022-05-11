@@ -4,66 +4,42 @@ type: 1
 language: al
 image: /img/about.jpg
 intro:
-  heading: Υπουργείο Τουρισμού και Περιβάλλοντος Αλβανίας
+  heading: Ministria e Turizmit dhe Mjedisit në Shqipëri
   image: /img/about_right.jpg
   body: >-
-    Το Υπουργείο Τουρισμού και Περιβάλλοντος της Αλβανίας είναι δημόσιος
-    φορέας αρμόδιος για την διαμόρφωση και υλοποίηση των πολιτικών που
-    σχετίζονται με το περιβάλλον, την προστασία της φύσης, την διαχείριση
-    αποβλήτων, την περιβαλλοντική παρακολούθηση, τα δάση, την ποιότητα του
-    νερού, τις προστατευόμενες περιοχές κλπ.
+    Ministria e Turizmit dhe Mjedisit (MTM) është një institucion publik përgjegjës për formulimin dhe zbatimin e politikave që lidhen me mjedisin, mbrojtjen e natyrës, menaxhimin e mbetjeve, monitorimin e mjedisit, pyjet, cilësinë e ujit, zonat e mbrojtura etj. Katër organe kombëtare funksionojnë në kuadër të Ministrisë si Agjenci Kombëtare, përkatësisht: Agjencia Kombëtare e Turizmit (AKT); Agjencia Kombëtare e Bregdetit; Agjencia Kombëtare e Zonave të Mbrojtura (AKZM); dhe Agjencia Kombëtare e Mjedisit (AKM), me Drejtoritë Rajonale të Mjedisit. Gjithashtu, Ministria ushtron detyrën e kontrollit të territorit nëpërmjet Inspektoratit Shtetëror të Mjedisit, pranë AKM-së. Punonjësit e ministrisë kanë personel me përvojë dhe mbështeten plotësisht në nivel administrativ.
 
+    Përsa i përket mbrojtjes së mjedisit, MTM mbështet vlerësimin dhe mbrojtjen e ekosistemeve të ndryshme, duke siguruar një mjedis të shëndetshëm dhe të qëndrueshëm për brezat ekzistues dhe të ardhshëm. Më konkretisht, Ministria e Turizmit dhe Mjedisit është angazhuar për përmirësimin e kushteve mjedisore përmes prioriteteve të mëposhtme:
 
-    Τέσσερεις Εθνικοί Φορείς λειτουργούν υπό την εποπτεία του Υπουργείου ως Εθνικές Υπηρεσίες αντίστοιχα: ο Εθνικός Οργανισμός Τουρισμού, ο Εθνικός Οργανισμός Ακτογραμμών, ο Εθνικός Οργανισμός Προστατευόμενων Περιοχών και ο Εθνικός Οργανισμός Περιβάλλοντος με τις Περιφερειακές Δ/νσεις για το περιβάλλον. Επιπλέον, το Υπουργείο έχει την αρμοδιότητα ελέγχου της περιοχής μέσω της Επιθεώρησης του Περιβάλλοντος η οποία υπάγεται στον Εθνικό Οργανισμό Περιβάλλοντος. Το Υπουργείο είναι στελεχωμένο με έμπειρο προσωπικό και υποστηρίζεται πλήρως διοικητικά.
+    \* Vlerësimi i ekosistemeve të rrezikuara dhe të mbrojtura duke hartuar Planet Kombëtare për Menaxhimin e Integruar të Zonave të Mbrojtura (ZM), të Parqeve Kombëtare (PK) dhe të Rezervateve Strikte Natyrore (RSN).
 
+    \* integrimi i ekosistemeve natyrore me projekte infrastrukturore dhe turistike.
 
-    Όσον αφορά στην προστασία του περιβάλλοντος το Υπουργείο στηρίζει και αναγνωρίζει την αξία της διαφύλαξης της βιοποικιλότητας των οικοσυστημάτων διασφαλίζοντας ένα βιώσιμο και υγιές περιβάλλον για τις υφιστάμενες και μελλοντικές γενιές.\
+    \* promovimi i ekonomisë rrethore në menaxhimin e mbetjeve të ngurta; etj.
 
+    \* parandalimi dhe frenimi i erozionit, nëpërmjet pyllëzimit me rritje të shpejtë dhe zhvillimit të veprave mbrojtëse hidroteknike.
 
-    Ειδικότερα, Το Υπουργείο Τουρισμού και Περιβάλλοντος της Αλβανίας έχει δεσμευτεί να βελτιώσει τις περιβαλλοντικές συνθήκες μέσα από τις παρακάτω προτεραιότητες:
+    \* përmirësimi i cilësisë së ajrit nëpërmjet një sistemi më të mirë monitorimi të ndotësve të ajrit në qytetet kryesore.
 
-
-    \* Αναγνώριση των προστατευόμενων και υπό εξαφάνιση οικοσυστημάτων με τον σχεδιασμό Εθνικών (Στρατηγικών) Σχεδίων για διοικητική ενσωμάτωση Προστατευόμενων Περιοχών, Εθνικών Πάρκων και Καταφύγιων Άγρια Ζωής.
-
-
-    \* Ενσωμάτωση στα φυσικά οικοσυστήματα υποδομών και τουριστικών έργων
-
-
-    \* Προώθηση της κυκλικής οικονομίας στην διαχείριση στερεών αποβλήτων κλπ.
-
-
-    \* Πρόληψη της υπάρχουσας διάβρωσης μέσα από αναδασώσεις ταχείας ανάπτυξης και ανάπτυξης υδροτεχνικών προστατευτικών έργων
-
-
-    \* Βελτίωση της ποιότητας του αέρα μέσα από ένα καλύτερο σύστημα παρακολούθησης ατμοσφαιρικών ρύπων στις μεγάλες πόλεις
-
-
-    Οι δεσμεύσεις του Υπουργείου για τον τουριστικό τομέα συμβαδίζουν με τις οδηγίες για την προστασία του περιβάλλοντος και στηρίζουν την βιώσιμη τουριστική ανάπτυξη, τον πολιτιστικό τουρισμό, τον αγροτουρισμό κλπ.
+    Angazhimet e Ministrisë ndaj sektorit të turizmit janë në përputhje me direktivat për mbrojtjen e mjedisit dhe mbështesin zhvillimin e turizmit të qëndrueshëm, turizmit kulturor, agroturizmit etj.
   image1: /img/about_right.jpg
 sectionMinistry:
   image: /img/about_middle.jpg
-  heading: Υπουργείο Τουρισμού Ελλάδος
+  heading: Ministria e Turizmit të Greqisë
   body: >-
-    Το Υπουργείο Τουρισμού ανασυστάθηκε σύμφωνα με τις διατάξεις του π.δ.
-    123/2016 (A’ 208). Αποστολή του Υπουργείου σύμφωνα με το π.δ. 127/2017
-    «Οργανισμός Υπουργείου Τουρισμού» (Α’ 157), όπως ισχύει, είναι:
+    Ministria e Turizmit u rikonstituua sipas përcaktimeve të P.D. 123/2016 (A' 208). Misioni i Ministrisë sipas P.D. 127/2017 “Organi i Ministrisë së Turizmit” (A’ 157), është:
 
+    a. Planifikimi dhe formulimi i një politike turistike. Planifikimi i zhvillimit të turizmit në kuadrin e politikës së përgjithshme të qeverisë dhe formulimi e promovimi i rregulloreve të nevojshme institucionale dhe rregulloreve të tjera
 
-    α. Ο προγραμματισμός και η χάραξη της τουριστικής πολιτικής, ο σχεδιασμός της τουριστικής ανάπτυξης στο πλαίσιο της γενικότερης κυβερνητικής πολιτικής και η διαμόρφωση και προώθηση των αναγκαίων θεσμικών και λοιπών ρυθμίσεων.
+    b. Bashkëpunimi me ministritë bashkëkompetente për përafrimin e politikave që prekin turizmin dhe koordinimin e veprimeve që synojnë rritjen e zhvillimit të turizmit, krijimin e një mjedisi të sigurt për ndërmarrjen e nismave investuese në këtë sektor dhe përmirësimin e cilësisë dhe konkurrencës së turizmit në vend.
 
+    c. Përfaqësimi i vendit në organizatat ndërkombëtare dhe marrëdhëniet ndërshtetërore për turizmin dhe zbatimi i konventave ndërkombëtare që i referohen sektorit të turizmit dhe marrëveshjeve dypalëshe të bashkëpunimit turistik.
 
-    β. Η συνεργασία με τα συναρμόδια Υπουργεία για την εναρμόνιση των πολιτικών που επηρεάζουν τον τουρισμό και το συντονισμό των δράσεων με σκοπό την υποβοήθηση της τουριστικής ανάπτυξης, την διαμόρφωση ασφαλούς περιβάλλοντος για ανάληψη επενδυτικών πρωτοβουλιών στον κλάδο και τη βελτίωση της ποιότητας και της ανταγωνιστικότητας του τουρισμού της χώρας.
+    d. Përmirësimi i shërbimeve turistike të ofruara nëpërmjet zbatimit të programeve arsimore të trajnimit.
 
-
-    γ. Η εκπροσώπηση της χώρας στους διεθνείς οργανισμούς και στις διακρατικές σχέσεις που αφορούν στον τουρισμό και η σύναψη διεθνών συμβάσεων που αναφέρονται στον τουριστικό τομέα και διμερών συμφωνιών τουριστικής συνεργασίας.
-
-
-    δ. Η αναβάθμιση των παρεχόμενων τουριστικών υπηρεσιών μέσα από την υλοποίηση προγραμμάτων εκπαίδευσης και κατάρτισης
-
-
-    Το Υπουργείο Τουρισμού συμμετέχει στο έργο ALTTOUR του Προγράμματoς Interreg IPA CBC Ελλάδα-Αλβανία 2014-2020 ως δικαιούχος.
+    Ministria e Turizmit merr pjesë në projektin ALTTOUR të Programit Interreg IPA CBC Greqi-Shqipëri 2014-2020 si përfituese.
 thermalSprings:
-  heading: Σύνδεσμος Δήμων Ιαματικών Πηγών Ελλάδας
+  heading: Shoqata Helene e Bashkive me Burime Termale
   body: >-
     Ο Σύνδεσμος Δήμων Ιαματικών Πηγών Ελλάδας ιδρύθηκε το 1983 με έδρα τα Καμένα
     Βούρλα, ενώ το 1985 μεταφέρεται στη Θεσσαλονίκη όπου και παραμένει μέχρι

@@ -18,7 +18,7 @@ module.exports = [
       { href: "/en/project", title: "PROJECT" },
       { href: "/en/locations", title: "APPLYING AREAS" },
       { href: "/en/news", title: "NEWS" },
-      { href: "en/contact", title: "CONTACT" },
+      { href: "/en/contact", title: "CONTACT" },
     ],
   },
   {
@@ -29,7 +29,7 @@ module.exports = [
       { href: "/al/project", title: "PROJECTI" },
       { href: "/al/locations", title: "ZONAT E APLIKIMIT" },
       { href: "/al/news", title: "NEWS" },
-      { href: "al/contact", title: "KOMUNIKIMI" },
+      { href: "/al/contact", title: "KOMUNIKIMI" },
     ],
   },
 ];
