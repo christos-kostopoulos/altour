@@ -3,7 +3,7 @@ templateKey: templates/location
 slug: sarandaporo
 language: gr
 contentType: location
-featuredimage: /img/Sarandaporo1.jpg
+featuredimage: /img/sarandaporo4.jpg
 title: Σαρανταπόρου
 country: al
 date: 2022-05-12
