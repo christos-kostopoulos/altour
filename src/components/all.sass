@@ -135,12 +135,11 @@ $body-line-height: 1.2
 
 .navbar-brand .navbar-item.logo
   padding: 0 1rem
-
+footer
+  border-top: 1px solid #e6e6e6
 footer.footer
   padding: 3rem 0rem 0rem
   background-color: transparent
-
-
 
 .content ul
   margin-left: 1em!important
@@ -170,18 +169,6 @@ footer.footer
   /* height: 320px !important; */
   width: 100% !important
 
-.arrow-section-white:after
-  content: ''
-  position: absolute
-  top: 100%
-  left: 15%
-  margin-left: -50px
-  width: 0
-  height: 0
-  border-top: solid 50px $primary-invert
-  border-left: solid 50px transparent
-  border-right: solid 50px transparent
-  z-index: 1
 
 .arrow-section-primary
   position: relative
@@ -217,7 +204,8 @@ footer.footer
   background-repeat: no-repeat
   background-position: center center
   background-size: 110%
-
+.ministry-image
+  width: 265px
 @import "~bulma"
 .latest-news-section-description
   width: 60%
@@ -226,7 +214,7 @@ footer.footer
   .blog-list-item .featured-thumbnail
     flex-basis: 50%
   .latest-news-section-description
-     width: 80%
+    width: 80%
 
 +mobile
   .blog-list-item header
@@ -236,6 +224,8 @@ footer.footer
     max-width: 70%
     margin: 0 0 1em
   footer img
-    width: 80%
+    width: 55%
   .latest-news-section-description
-     width: 100%
+    width: 100%
+  .ministry-image
+    width: 145px

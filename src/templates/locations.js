@@ -13,7 +13,12 @@ const LocationsPage = ({ data }) => {
   const { frontmatter: page } = data.page;
   const { edges: locations } = data.locations;
 
-  console.log(locations);
+  const sarandaporo =
+    locations.length > 0 &&
+    locations.find((loc) => loc.node.fields.slug === "/sarandaporo/");
+  const benja =
+    locations.length > 0 &&
+    locations.find((loc) => loc.node.fields.slug === "/benja/");
   return (
     <Layout>
       <Navbar lang={page.language} slug={data.page.fields.slug} />
@@ -26,14 +31,11 @@ const LocationsPage = ({ data }) => {
           layout="fullWidth"
           aspectratio={3 / 1}
         />
+
         <section className="section section--gradient arrow-section-white">
-          <div className="container">
-            <h1 className="title  has-text-weight-light is-bold-light is-size-2 is-size-3-mobile">
-              {page.title}
-            </h1>
-          </div>
-        </section>
-        <section className="section section--gradient arrow-section-white">
+          <h1 className="title  has-text-weight-light is-bold-light is-size-2 is-size-3-mobile">
+            {page.title}
+          </h1>
           <h2>{page.language === "gr" ? "Ελλαδα" : "Greek"}</h2>
           {locations
             .filter(
@@ -92,6 +94,59 @@ const LocationsPage = ({ data }) => {
                 </div>
               );
             })}
+          <h2>{page.language === "gr" ? "Αλβανία" : "Albania"}</h2>
+          {/* SARANTOPORO PLACE */}
+          {sarandaporo ? (
+            <div className="columns">
+              <div className="column is-8">
+                <div className="html">
+                  <PageContent
+                    className="content"
+                    content={sarandaporo.node.html}
+                  />
+                </div>
+              </div>
+              <div className="column is-4">
+                <PreviewCompatibleImage
+                  imageInfo={{
+                    image: sarandaporo.node.frontmatter.featuredimage,
+                    alt: `featured image thumbnail for post ${sarandaporo.node.frontmatter.title}`,
+                    width:
+                      sarandaporo.node.frontmatter.featuredimage.childImageSharp
+                        .gatsbyImageData.width,
+                    height:
+                      sarandaporo.node.frontmatter.featuredimage.childImageSharp
+                        .gatsbyImageData.height,
+                  }}
+                />
+              </div>
+            </div>
+          ) : null}
+
+          {/* Benga PLACE */}
+          {benja ? (
+            <div className="columns">
+              <div className="column is-4">
+                <PreviewCompatibleImage
+                  imageInfo={{
+                    image: benja.node.frontmatter.featuredimage,
+                    alt: `featured image thumbnail for post ${benja.node.frontmatter.title}`,
+                    width:
+                      benja.node.frontmatter.featuredimage.childImageSharp
+                        .gatsbyImageData.width,
+                    height:
+                      benja.node.frontmatter.featuredimage.childImageSharp
+                        .gatsbyImageData.height,
+                  }}
+                />
+              </div>
+              <div className="column is-8">
+                <div className="html">
+                  <PageContent className="content" content={benja.node.html} />
+                </div>
+              </div>
+            </div>
+          ) : null}
         </section>
       </div>
     </Layout>

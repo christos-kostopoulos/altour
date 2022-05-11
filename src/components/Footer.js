@@ -115,9 +115,9 @@ const Footer = class extends React.Component {
                   </Link>
                   <Link to="/" title="Logo">
                     <img
+                      className="ministry-image"
                       src={ministry}
                       alt="ministry"
-                      style={{ width: "265px" }}
                     />
                   </Link>
                 </div>
