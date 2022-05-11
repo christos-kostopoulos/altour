@@ -125,38 +125,6 @@ collections:
                 ],
             }
 
-      # Contact Page EN
-      - file: "content/en/main-pages/contact.md"
-        label: Contact
-        name: contactEN
-        identifier_field: name
-        fields:
-          - {
-              label: Template Key,
-              name: templateKey,
-              widget: hidden,
-              default: templates/contact,
-            }
-          - { label: Type, name: type, widget: hidden, default: 1 }
-          - { label: Language, name: language, widget: hidden, default: gr }
-          - { label: Title, name: title, widget: string }
-
-      # Projects Page EN
-      - file: "content/en/main-pages/project.md"
-        label: Project
-        name: projectEN
-        identifier_field: name
-        fields:
-          - {
-              label: Template Key,
-              name: templateKey,
-              widget: hidden,
-              default: templates/project,
-            }
-          - { label: Type, name: type, widget: hidden, default: 1 }
-          - { label: Language, name: language, widget: hidden, default: en }
-          - { label: Title, name: title, widget: string }
-          - { label: Description, name: description, widget: string }
   #Location EN
   - name: "locationEn"
     label: "Location (english)"
@@ -366,38 +334,6 @@ collections:
                 ],
             }
 
-      # Contact Page GR
-      - file: "content/gr/main-pages/contact.md"
-        label: Contact
-        name: contactGR
-        identifier_field: name
-        fields:
-          - {
-              label: Template Key,
-              name: templateKey,
-              widget: hidden,
-              default: templates/contact,
-            }
-          - { label: Type, name: type, widget: hidden, default: 1 }
-          - { label: Language, name: language, widget: hidden, default: gr }
-          - { label: Title, name: title, widget: string }
-
-      # Projects Page GR
-      - file: "content/gr/main-pages/project.md"
-        label: Project
-        name: projectGR
-        identifier_field: name
-        fields:
-          - {
-              label: Template Key,
-              name: templateKey,
-              widget: hidden,
-              default: templates/project,
-            }
-          - { label: Type, name: type, widget: hidden, default: 1 }
-          - { label: Language, name: language, widget: hidden, default: gr }
-          - { label: Title, name: title, widget: string }
-          - { label: Description, name: description, widget: string }
 
   #Location gr
   - name: "locationGr"
@@ -460,6 +396,211 @@ collections:
         }
       - { label: Slug, name: slug, widget: string }
       - { label: Language, name: language, widget: hidden, default: gr }
+      - {
+          label: Content Type,
+          name: contentType,
+          widget: hidden,
+          default: upcoming,
+        }
+      - { label: Image, name: image, widget: image }
+      - {
+          label: Title,
+          name: title,
+          widget: string,
+          pattern: [".{0,80}", "Oopsy, no more that 80 characters"],
+        }
+      - {
+          label: Body,
+          name: body,
+          widget: markdown,
+          default: "Be interesting but not annoying",
+        }
+      - {
+          label: Description,
+          name: description,
+          widget: string,
+          default: [".{0,80}", "Oopsy, no more that 80 characters"],
+        }
+      - {
+          label: Date,
+          name: date,
+          widget: date,
+          format: YYYY-MM-DD,
+          default: "",
+        }
+
+ #----------------------------------------------gr
+
+  # Main Pages al
+  - name: "mainPageAl"
+    identifier_field: name
+    label: "Main Pages (Albanian)"
+    filter: { field: language, value: al }
+
+    editor:
+      preview: true
+    files:
+      #Home AL
+      - file: "content/al/main-pages/index.md"
+        label: Index
+        name: indexAL
+        identifier_field: name
+        fields:
+          - { label: Template Key, name: templateKey, widget: hidden }
+          - { label: Type, name: type, widget: hidden, default: 1 }
+          - { label: Language, name: language, widget: hidden, default: al }
+          - { label: Hero Heading, name: heroHeading, widget: string }
+          - { label: Hero Image, name: image, widget: image }
+          - {
+              label: Locations,
+              name: locations,
+              widget: object,
+              fields:
+                [
+                  { label: Title, name: title, widget: string },
+                  { label: Description, name: description, widget: text },
+                ],
+            }
+          - {
+              label: Latest,
+              name: latest,
+              widget: object,
+              fields:
+                [
+                  { label: Title, name: title, widget: string },
+                  { label: Description, name: description, widget: text },
+                ],
+            }
+      #About Page GR
+      - file: "content/al/main-pages/about.md"
+        label: "About"
+        name: "aboutAL"
+        filter: { field: language, value: al }
+        identifier_field: name
+        editor:
+          preview: true
+        fields:
+          - {
+              label: "Template Key",
+              name: "templateKey",
+              widget: "hidden",
+              default: "about",
+            }
+          - { label: Image, name: image, widget: image }
+          - {
+              label: Intro,
+              name: intro,
+              widget: object,
+              fields:
+                [
+                  { label: Heading, name: heading, widget: string },
+                  { label: Image, name: image, widget: image },
+                  { label: Body, name: body, widget: markdown },
+                ],
+            }
+          - {
+              label: Greek Ministry,
+              name: sectionMinistry,
+              widget: object,
+              fields:
+                [
+                  { label: Heading, name: heading, widget: string },
+                  { label: Image, name: image, widget: image },
+                  { label: Body, name: body, widget: markdown },
+                ],
+            }
+          - {
+              label: Thermal Springs,
+              name: thermalSprings,
+              widget: object,
+              fields:
+                [
+                  { label: Heading, name: heading, widget: string },
+                  { label: Body, name: body, widget: markdown },
+                ],
+            }
+          - {
+              label: Goals,
+              name: goals,
+              widget: object,
+              fields:
+                [
+                  { label: Heading, name: heading, widget: string },
+                  { label: Body, name: body, widget: markdown },
+                ],
+            }
+          - {
+              label: Sustainable,
+              name: sustainable,
+              widget: object,
+              fields:
+                [
+                  { label: Heading, name: heading, widget: string },
+                  { label: Body, name: body, widget: markdown },
+                ],
+            }
+
+  #Location gr
+  - name: "locationEl"
+    label: "Location (Albanian)"
+    folder: "content/al/location"
+    filter: { field: contentType, value: location }
+    create: true
+    slug: "{{slug}}"
+    identifier_field: slug
+    fields:
+      - {
+          label: Template Key,
+          name: templateKey,
+          widget: hidden,
+          default: templates/location,
+        }
+      - { label: Slug, name: slug, widget: string }
+      - { label: Language, name: language, widget: hidden, default: al }
+      - {
+          label: Content Type,
+          name: contentType,
+          widget: hidden,
+          default: location,
+        }
+      - { label: Image, name: image, widget: image }
+      - {
+          label: Title,
+          name: title,
+          widget: string,
+          pattern: [".{0,80}", "Oopsy, no more that 80 characters"],
+        }
+      - { label: Body, name: body, widget: markdown }
+      - {
+          label: "Country thermal",
+          name: "country",
+          widget: "select",
+          options: ["gr", "al"]
+        }
+      - {
+          label: Date,
+          name: date,
+          widget: date,
+          format: YYYY-MM-DD,
+          default: "",
+        }
+
+  - name: "upcomingAl"
+    label: "Upcoming (Albanian)"
+    folder: "content/al/upcoming"
+    filter: { field: contentType, value: upcoming }
+    create: true
+    slug: "{{slug}}"
+    identifier_field: slug
+    fields:
+      - {
+          label: Template Key,
+          name: templateKey,
+          widget: hidden,
+          default: templates/upcoming,
+        }
+      - { label: Slug, name: slug, widget: string }
+      - { label: Language, name: language, widget: hidden, default: al }
       - {
           label: Content Type,
           name: contentType,
