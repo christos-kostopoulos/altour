@@ -211,6 +211,14 @@ collections:
           default: "Be interesting but not annoying",
         }
       - {
+          label: "Align Content",
+          name: "align",
+          widget: "select",
+          options:
+            - { label: "Greek thermals", value: "GR" }
+            - { label: "Albanian thermals", value: "AL" }
+        }
+      - {
           label: Date,
           name: date,
           widget: date,
