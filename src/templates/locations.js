@@ -36,7 +36,7 @@ const LocationsPage = ({ data }) => {
           <h1 className="title  has-text-weight-light is-bold-light is-size-2 is-size-3-mobile">
             {page.title}
           </h1>
-          <h2>{page.language === "gr" ? "Ελλαδα" : "Greek"}</h2>
+          <h2>{page.language === "gr" ? "Ελλαδα" : "Greek"} </h2>
           {locations
             .filter(
               (loc) =>
