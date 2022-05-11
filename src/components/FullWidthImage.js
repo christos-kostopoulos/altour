@@ -2,10 +2,10 @@ import React from "react";
 import PropTypes from "prop-types";
 import { StaticImage } from "gatsby-plugin-image";
 import { Link } from "gatsby";
-
+import useMobile from "../hooks/useMobile";
 export default function FullWidthImage(props) {
   const { height = "100vh", img, title, imgPosition = "top left" } = props;
-
+  const { isMobile } = useMobile();
   return (
     <React.Fragment>
       <div
@@ -33,6 +33,7 @@ export default function FullWidthImage(props) {
               placeItems: "left",
               display: "grid",
               paddingLeft: "10%",
+              top: isMobile && "20%",
             }}
           >
             {/* Any content here will be centered in the component */}
