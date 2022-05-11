@@ -22,6 +22,7 @@ const GalleryImg = ({ filename, alt }) => {
       }
     }
   `);
+  console.log(data, filename)
   const image = data.images.edges.find((n) =>
     n.node.relativePath.includes(filename)
   );
