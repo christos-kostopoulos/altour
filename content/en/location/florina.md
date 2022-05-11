@@ -1,9 +1,10 @@
 ---
 templateKey: templates/location
 slug: florina
+featuredimage: /img/florina.png
 language: en
 contentType: location
-featuredimage: /img/florina.png
+image: /img/florina.png
 title: Florina
 country: gr
 date: 2022-05-11
