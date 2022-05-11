@@ -211,12 +211,10 @@ collections:
           default: "Be interesting but not annoying",
         }
       - {
-          label: "Align Content",
-          name: "align",
+          label: "Country thermal",
+          name: "country",
           widget: "select",
-          options:
-            - { label: "Greek thermals", value: "GR" }
-            - { label: "Albanian thermals", value: "AL" }
+          options: ["gr", "al"]
         }
       - {
           label: Date,
@@ -466,6 +464,12 @@ collections:
           pattern: [".{0,80}", "Oopsy, no more that 80 characters"],
         }
       - { label: Body, name: body, widget: markdown }
+      - {
+          label: "Country thermal",
+          name: "country",
+          widget: "select",
+          options: ["gr", "al"]
+        }
       - {
           label: Date,
           name: date,
