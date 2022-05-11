@@ -1,19 +1,19 @@
 import React from "react";
 import Markdown from "react-markdown";
 import { graphql, Link } from "gatsby";
-import { getImage, StaticImage } from "gatsby-plugin-image";
+import { StaticImage } from "gatsby-plugin-image";
 import FullWidthImage from "../components/FullWidthImage";
 import Layout from "../components/Layout";
 import Navbar from "../components/Navbar";
+import PreviewCompatibleImage from "../components/PreviewCompatibleImage";
 import Content, { HTMLContent } from "../components/Content";
 
 const LocationsPage = ({ data }) => {
   const PageContent = HTMLContent || Content;
   const { frontmatter: page } = data.page;
-  const { edges: blogs } = data.blogs;
+  const { edges: locations } = data.locations;
 
-  const heroImage = getImage(page.image) || page.image;
-  console.log(page);
+  console.log(locations);
   return (
     <Layout>
       <Navbar lang={page.language} slug={data.page.fields.slug} />
@@ -31,24 +31,60 @@ const LocationsPage = ({ data }) => {
             <h2 className="title  has-text-weight-light is-bold-light is-size-2 is-size-3-mobile">
               {page.title}
             </h2>
-            {/* <PageContent className="content" content={data.page.html} /> */}
           </div>
         </section>
         <section className="section section--gradient arrow-section-white">
-          <div className="container">
-            <h1>{page.title}</h1>
-          </div>
-          
-          {blogs.map((post) => (
-            <Link to={post.node.fields.slug}>
-              <div className="note">
-                <h3>{post.node.frontmatter.title}</h3>
-                <div className="html">
-                  <Markdown source={post.node.excerpt} escapeHtml={false} />
+          {locations.map((location, index) => {
+            return (
+              <div className="columns">
+                {index % 2 !== 0 && (
+                  <div className="column is-4">
+                    <PreviewCompatibleImage
+                      imageInfo={{
+                        image: location.node.frontmatter.featuredimage,
+                        alt: `featured image thumbnail for post ${location.node.frontmatter.title}`,
+                        width:
+                          location.node.frontmatter.featuredimage
+                            .childImageSharp.gatsbyImageData.width,
+                        height:
+                          location.node.frontmatter.featuredimage
+                            .childImageSharp.gatsbyImageData.height,
+                      }}
+                    />
+                  </div>
+                )}
+                <div className="column is-8">
+                  {/* <h3>
+                    <Link to={location.node.fields.slug}>
+                      {location.node.frontmatter.title}{" "}
+                    </Link>
+                  </h3> */}
+                  <div className="html">
+                    <PageContent
+                      className="content"
+                      content={location.node.html}
+                    />
+                  </div>
                 </div>
+                {index % 2 === 0 && (
+                  <div className="column is-4">
+                    <PreviewCompatibleImage
+                      imageInfo={{
+                        image: location.node.frontmatter.featuredimage,
+                        alt: `featured image thumbnail for post ${location.node.frontmatter.title}`,
+                        width:
+                          location.node.frontmatter.featuredimage
+                            .childImageSharp.gatsbyImageData.width,
+                        height:
+                          location.node.frontmatter.featuredimage
+                            .childImageSharp.gatsbyImageData.height,
+                      }}
+                    />
+                  </div>
+                )}
               </div>
-            </Link>
-          ))}
+            );
+          })}
         </section>
       </div>
     </Layout>
@@ -67,14 +103,9 @@ export const LocationsPageQuery = graphql`
       frontmatter {
         language
         title
-        image {
-          childImageSharp {
-            gatsbyImageData(quality: 100, layout: FULL_WIDTH)
-          }
-        }
       }
     }
-    blogs: allMarkdownRemark(
+    locations: allMarkdownRemark(
       filter: {
         frontmatter: {
           contentType: { eq: "location" }
@@ -85,13 +116,18 @@ export const LocationsPageQuery = graphql`
     ) {
       edges {
         node {
-          excerpt(pruneLength: 80)
           fields {
             slug
           }
+          html
           frontmatter {
-            language
+            featuredimage {
+              childImageSharp {
+                gatsbyImageData(quality: 100, layout: CONSTRAINED)
+              }
+            }
             title
+            country
           }
         }
       }
