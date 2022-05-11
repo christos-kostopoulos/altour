@@ -168,6 +168,7 @@ export const indexQuery = graphql`
               }
             }
             title
+            country
           }
         }
       }

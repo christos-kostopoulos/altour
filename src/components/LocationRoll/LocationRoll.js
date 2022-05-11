@@ -46,9 +46,11 @@ class LocationRoll extends React.Component {
       <div>
         {posts && (
           <Slider {...settings}>
-            {posts.map(({ node: post }) => (
-              <LocationRollItem key={post.id} {...post} />
-            ))}
+            {posts
+              .filter(({ node: post }) => post.frontmatter.country !== "al")
+              .map(({ node: post }) => (
+                <LocationRollItem key={post.id} {...post} />
+              ))}
           </Slider>
         )}
       </div>
