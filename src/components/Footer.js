@@ -29,17 +29,17 @@ const Footer = class extends React.Component {
                       </Link>
                     </li>
                     <li>
-                      <Link className="has-text-weight-bold" to="/">
+                      <Link className="has-text-weight-bold" to="/project">
                         ΤΟ ΕΡΓΟ
                       </Link>
                     </li>
                     <li>
-                      <Link className="has-text-weight-bold" to="/">
+                      <Link className="has-text-weight-bold" to="/locations">
                         ΠΕΡΙΟΧΕΣ ΕΦΑΡΜΟΓΗΣ
                       </Link>
                     </li>
                     <li>
-                      <Link className="has-text-weight-bold" to="/">
+                      <Link className="has-text-weight-bold" to="/news">
                         ΝΕΑ & ΕΚΔΗΛΩΣΕΙΣ
                       </Link>
                     </li>

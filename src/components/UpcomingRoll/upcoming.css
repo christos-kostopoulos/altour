@@ -1,6 +1,7 @@
 .upcoming-card {
   width: 85%;
   margin: 0 auto;
+  min-height: 360px;
 }
 
 @media screen and (max-width: 749px) {
