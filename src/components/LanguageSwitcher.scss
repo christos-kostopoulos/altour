@@ -5,9 +5,13 @@ body {
 }
 .nav-wrapper {
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
   .sl-nav {
   display: inline;
+  width: 100px;
 }
 .sl-nav ul {
   margin:0;
@@ -29,7 +33,7 @@ body {
   right:-15px;
   display: block;
   background: #fff;
-  width: 120px;
+  width: 80px;
   padding-top: 0px;
   z-index: 1;
   border-radius:5px;
@@ -58,17 +62,14 @@ body {
 }
 .sl-nav li ul li {
   position: relative;
-  text-align: left;
-  background: transparent;
-  padding: 15px 15px;
-  padding-bottom:0;
-  z-index: 2;
-  font-size: 15px;
-  color: #3c3c3c;
+    text-align: left;
+    background: transparent;
+    padding: 5px 10px;
+    z-index: 2;
+    font-size: 15px;
+    color: #3c3c3c;
 }
-.sl-nav li ul li:last-of-type {
-  padding-bottom: 15px;
-}
+
 .sl-nav li ul li span {
   padding-left: 5px;
 }
@@ -81,7 +82,6 @@ body {
   width: 15px;
   height: 15px;
   background: #aaa;
-  border-radius: 50%;
   position: relative;
   top: 2px;
   overflow: hidden;

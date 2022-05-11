@@ -10,31 +10,32 @@ const LanguageSwitcher = ({ slug }) => {
     ? slug.replace("/en/", "/")
     : slug.replace("/", "/en/");
   return (
-    <div className="nav-wrapper">
+    <div className="nav-wrapper mt-2">
       <div className="sl-nav">
         <ul>
           <li>
             <i className={`sl-flag flag-${activeLanguage}`}>
               <div id="germany"></div>
             </i>
-            <b>{activeLanguage}</b>
+            <b className="ml-2">{activeLanguage}</b>
             <i className="fa fa-angle-down" aria-hidden="true"></i>
             <div className="triangle"></div>
             <ul>
               {nav.map((item) => (
-                <li>
-                  <Link
-                    className={`${componentStyle}-item${
-                      activeLanguage === item.lang ? "-active" : ""
-                    }`}
-                    to={url}
-                  >
+                <Link
+                  className={`${componentStyle}-item${
+                    activeLanguage === item.lang ? "-active" : ""
+                  }`}
+                  to={url}
+                >
+                  {" "}
+                  <li>
                     <i className={`sl-flag flag-${item.lang}`}>
                       <div id="germany"></div>
                     </i>
                     <span className="active"> {item.lang}</span>
-                  </Link>
-                </li>
+                  </li>
+                </Link>
               ))}
             </ul>
           </li>

@@ -49,7 +49,6 @@ export default function Contact({ data }) {
       >
         <div className="container">
           <div className="content">
-            {/* <FullWidthImage img={heroImage} /> */}
             <h1>Contact</h1>
             <div className="columns">
               <div className="column is-half">

@@ -1,7 +1,7 @@
 import React from "react";
 import Markdown from "react-markdown";
 import { graphql, Link } from "gatsby";
-import { getImage, GatsbyImage } from "gatsby-plugin-image";
+import { getImage, StaticImage } from "gatsby-plugin-image";
 import FullWidthImage from "../components/FullWidthImage";
 import Layout from "../components/Layout";
 import Navbar from "../components/Navbar";
@@ -18,7 +18,14 @@ const LocationsPage = ({ data }) => {
     <Layout>
       <Navbar lang={page.language} slug={data.page.fields.slug} />
       <div className="content">
-        <FullWidthImage img={heroImage} />
+        <StaticImage
+          src="../img/about.jpg"
+          alt="contact"
+          placeholder="blurred"
+          objectFit={"cover"}
+          layout="fullWidth"
+          aspectratio={3 / 1}
+        />
         <section className="section section--gradient arrow-section-white">
           <div className="container">
             <h2 className="title  has-text-weight-light is-bold-light is-size-2 is-size-3-mobile">

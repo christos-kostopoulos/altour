@@ -1,10 +1,10 @@
-const path = require('path')
-const _ = require('lodash')
-const { fmImagesToRelative } = require('gatsby-remark-relative-images-v2')
-const slugHandler = require('./src/api/slugHandler')
-
+const path = require("path");
+const _ = require("lodash");
+const { fmImagesToRelative } = require("gatsby-remark-relative-images-v2");
+const slugHandler = require("./src/api/slugHandler");
+const { createFilePath } = require("gatsby-source-filesystem");
 exports.createPages = ({ actions, graphql }) => {
-  const { createPage } = actions
+  const { createPage } = actions;
 
   return graphql(`
     {
@@ -25,23 +25,23 @@ exports.createPages = ({ actions, graphql }) => {
         }
       }
     }
-  `).then(result => {
+  `).then((result) => {
     if (result.errors) {
-      result.errors.forEach(e => console.error(e.toString()))
-      return Promise.reject(result.errors)
+      result.errors.forEach((e) => console.error(e.toString()));
+      return Promise.reject(result.errors);
     }
 
-    const posts = result.data.allMarkdownRemark.edges
+    const posts = result.data.allMarkdownRemark.edges;
     // this is where pages are being built
-    posts.forEach(edge => {
-      const id = edge.node.id
-      const language = edge.node.frontmatter.language
-      const templateKey = edge.node.frontmatter.templateKey
+    posts.forEach((edge) => {
+      const id = edge.node.id;
+      const language = edge.node.frontmatter.language;
+      const templateKey = edge.node.frontmatter.templateKey;
       const slug = slugHandler(
         language,
         templateKey,
         edge.node.frontmatter.slug
-      )
+      );
       createPage({
         path: slug,
         component: path.resolve(`src/${String(templateKey)}.js`),
@@ -51,23 +51,26 @@ exports.createPages = ({ actions, graphql }) => {
           templateKey,
           slug,
         },
-      })
-    })
-  })
-}
+      });
+    });
+  });
+};
 
-exports.onCreateNode = ({ node, actions }) => {
-  const { createNodeField } = actions
-  fmImagesToRelative(node) // convert image paths for gatsby images
+exports.onCreateNode = ({ node, actions, getNode }) => {
+  const { createNodeField } = actions;
+  fmImagesToRelative(node); // convert image paths for gatsby images
   if (!!node.frontmatter && !!node.frontmatter.slug) {
-    createNodeField({
-      node,
-      name: `slug`,
-      value: slugHandler(
-        node.frontmatter.language,
-        node.frontmatter.templateKey,
-        node.frontmatter.slug
-      ),
-    })
+    if (node.internal.type === `MarkdownRemark`) {
+      const value = createFilePath({ node, getNode });
+      createNodeField({
+        name: `slug`,
+        node,
+        value: slugHandler(
+          node.frontmatter.language,
+          node.frontmatter.templateKey,
+          node.frontmatter.slug
+        ),
+      });
+    }
   }
-}
+};

@@ -23,22 +23,30 @@ export const AboutPageTemplate = ({
   const ministryImage = getImage(sectionMinistry.image);
   return (
     <div className="content">
-      <FullWidthImage img={heroImage} />
+      <StaticImage
+        src="../img/about.jpg"
+        alt="contact"
+        placeholder="blurred"
+        objectFit={"cover"}
+        layout="fullWidth"
+        aspectratio={3 / 1}
+      />
       <section className="section section--gradient arrow-section-white">
         <div className="container">
           <div className="columns">
             <div className="column is-8">
-              <h2
-                className="title  has-text-weight-light is-bold-light is-size-2 is-size-3-mobile"
-              >
+              <h2 className="title  has-text-weight-light is-bold-light is-size-2 is-size-3-mobile">
                 {intro.heading}
               </h2>
               <ReactMarkdown>{intro.body}</ReactMarkdown>
             </div>
             <div className="column is-4">
-              <GatsbyImage
-                image={rightImage}
-                alt="right image"
+              <StaticImage
+                src="../img/about_right.jpg"
+                alt="contact"
+                placeholder="blurred"
+                objectFit={"cover"}
+                layout="fullWidth"
                 style={{ height: "100%" }}
               />
             </div>
@@ -52,9 +60,12 @@ export const AboutPageTemplate = ({
           </h3>
           <div className="columns pt-2 pb-5">
             <div className="column is-6">
-              <GatsbyImage
-                image={ministryImage}
-                alt="mininstry image"
+              <StaticImage
+                src="../img/about_middle.jpg"
+                alt="contact"
+                placeholder="blurred"
+                objectFit={"cover"}
+                layout="fullWidth"
                 style={{ height: "100%" }}
               />
             </div>
