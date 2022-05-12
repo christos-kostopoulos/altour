@@ -4,117 +4,92 @@ type: 1
 language: gr
 image: /img/about.jpg
 intro:
-  heading: Υπουργείο Τουρισμού και Περιβάλλοντος Αλβανίας
+  heading: Ministry of Tourism and Environment of Albania
   image: /img/about_right.jpg
   body: >-
-    Το Υπουργείο Τουρισμού και Περιβάλλοντος της Αλβανίας είναι δημόσιος
-    φορέας αρμόδιος για την διαμόρφωση και υλοποίηση των πολιτικών που
-    σχετίζονται με το περιβάλλον, την προστασία της φύσης, την διαχείριση
-    αποβλήτων, την περιβαλλοντική παρακολούθηση, τα δάση, την ποιότητα του
-    νερού, τις προστατευόμενες περιοχές κλπ.
-
+    The Ministry of Tourism and Environment (MoTE) is a public institution responsible for the formulation and implementation of the policies related to environment, nature protection, waste management, environmental monitoring, forest, water quality, protected areas etc.  Four national bodies operate under the Ministry as National Agencies, respectively:  the National Tourism Agency (NTA); the National Coastline Agency; the National Agency of Protected Areas (NAPA); and the National Environment Agency (NEA), with its Regional Environmental Directorates. Moreover, the Ministry exercises the task of controlling the territory through the State Inspectorate of Environment, which is attached to the NEA. The ministry employees experienced personnel and is fully supported on an administrative level. 
 
     Τέσσερεις Εθνικοί Φορείς λειτουργούν υπό την εποπτεία του Υπουργείου ως Εθνικές Υπηρεσίες αντίστοιχα: ο Εθνικός Οργανισμός Τουρισμού, ο Εθνικός Οργανισμός Ακτογραμμών, ο Εθνικός Οργανισμός Προστατευόμενων Περιοχών και ο Εθνικός Οργανισμός Περιβάλλοντος με τις Περιφερειακές Δ/νσεις για το περιβάλλον. Επιπλέον, το Υπουργείο έχει την αρμοδιότητα ελέγχου της περιοχής μέσω της Επιθεώρησης του Περιβάλλοντος η οποία υπάγεται στον Εθνικό Οργανισμό Περιβάλλοντος. Το Υπουργείο είναι στελεχωμένο με έμπειρο προσωπικό και υποστηρίζεται πλήρως διοικητικά.
 
+    In terms of environmental protection, the MoTE supports the valorization and safeguarding of diverse ecosystems, by ensuring a healthy and sustainable environment for existing and future generations.
+    
+    More specifically, the Ministry of Tourism and Environment has committed to improve environmental conditions through the following priorities:
 
-    Όσον αφορά στην προστασία του περιβάλλοντος το Υπουργείο στηρίζει και αναγνωρίζει την αξία της διαφύλαξης της βιοποικιλότητας των οικοσυστημάτων διασφαλίζοντας ένα βιώσιμο και υγιές περιβάλλον για τις υφιστάμενες και μελλοντικές γενιές.\
+    \* valorizing endangered and protected ecosystems by drafting the National Plans for Integrated Management of Protected Areas (PAs), of National Parks (KPs), and of Strict Natural Reserves (RNS)
 
+    \* integrating natural ecosystems with infrastructure and tourism projects.
 
-    Ειδικότερα, Το Υπουργείο Τουρισμού και Περιβάλλοντος της Αλβανίας έχει δεσμευτεί να βελτιώσει τις περιβαλλοντικές συνθήκες μέσα από τις παρακάτω προτεραιότητες:
+    \* promoting circular economy in solid waste management; etc.
 
+    \* preventing and containing erosion, through rapid-growth forestation and development of hydrotechnical protective works. 
 
-    \* Αναγνώριση των προστατευόμενων και υπό εξαφάνιση οικοσυστημάτων με τον σχεδιασμό Εθνικών (Στρατηγικών) Σχεδίων για διοικητική ενσωμάτωση Προστατευόμενων Περιοχών, Εθνικών Πάρκων και Καταφύγιων Άγρια Ζωής.
+    \* improving air quality through a better monitoring system of air pollutants in the major cities.
 
+    The commitments of the Ministry to the tourism sector are in line with environmental protection directives, and support the development of sustainable tourism, cultural tourism, agro-tourism, etc.
 
-    \* Ενσωμάτωση στα φυσικά οικοσυστήματα υποδομών και τουριστικών έργων
-
-
-    \* Προώθηση της κυκλικής οικονομίας στην διαχείριση στερεών αποβλήτων κλπ.
-
-
-    \* Πρόληψη της υπάρχουσας διάβρωσης μέσα από αναδασώσεις ταχείας ανάπτυξης και ανάπτυξης υδροτεχνικών προστατευτικών έργων
-
-
-    \* Βελτίωση της ποιότητας του αέρα μέσα από ένα καλύτερο σύστημα παρακολούθησης ατμοσφαιρικών ρύπων στις μεγάλες πόλεις
-
-
-    Οι δεσμεύσεις του Υπουργείου για τον τουριστικό τομέα συμβαδίζουν με τις οδηγίες για την προστασία του περιβάλλοντος και στηρίζουν την βιώσιμη τουριστική ανάπτυξη, τον πολιτιστικό τουρισμό, τον αγροτουρισμό κλπ.
   image1: /img/about_right.jpg
 sectionMinistry:
   image: /img/about_middle.jpg
-  heading: Υπουργείο Τουρισμού Ελλάδος
+  heading: Ministry of Tourism of Greece
   body: >-
-    Το Υπουργείο Τουρισμού ανασυστάθηκε σύμφωνα με τις διατάξεις του π.δ.
-    123/2016 (A’ 208). Αποστολή του Υπουργείου σύμφωνα με το π.δ. 127/2017
-    «Οργανισμός Υπουργείου Τουρισμού» (Α’ 157), όπως ισχύει, είναι:
+    a) The planning and formulation of a tourism policy. The planning of tourism development within the framework of the general government policy and the formulation and promotion of the necessary institutional - and other -regulations.
 
+    b) The collaboration with the co-competent Ministries for the alignment of the policies affecting tourism and the coordination of actions aimed to enhance tourism development, creating a safe environment for undertaking investment initiatives in the sector and improving the quality and competitiveness of the country's tourism.
 
-    α. Ο προγραμματισμός και η χάραξη της τουριστικής πολιτικής, ο σχεδιασμός της τουριστικής ανάπτυξης στο πλαίσιο της γενικότερης κυβερνητικής πολιτικής και η διαμόρφωση και προώθηση των αναγκαίων θεσμικών και λοιπών ρυθμίσεων.
+    c) The representation of the country in international organizations and interstate relations concerning tourism and the employment of international conventions referring to the tourism sector and bilateral agreements of tourism cooperation.
 
+    d) The upgrading of the provided tourism services through the implementation of education training programs 
 
-    β. Η συνεργασία με τα συναρμόδια Υπουργεία για την εναρμόνιση των πολιτικών που επηρεάζουν τον τουρισμό και το συντονισμό των δράσεων με σκοπό την υποβοήθηση της τουριστικής ανάπτυξης, την διαμόρφωση ασφαλούς περιβάλλοντος για ανάληψη επενδυτικών πρωτοβουλιών στον κλάδο και τη βελτίωση της ποιότητας και της ανταγωνιστικότητας του τουρισμού της χώρας.
+    The Ministry of Tourism participates in the ALTTOUR project of the Interreg IPA CBC Program Greece-Albania 2014-2020 as a beneficiary
 
-
-    γ. Η εκπροσώπηση της χώρας στους διεθνείς οργανισμούς και στις διακρατικές σχέσεις που αφορούν στον τουρισμό και η σύναψη διεθνών συμβάσεων που αναφέρονται στον τουριστικό τομέα και διμερών συμφωνιών τουριστικής συνεργασίας.
-
-
-    δ. Η αναβάθμιση των παρεχόμενων τουριστικών υπηρεσιών μέσα από την υλοποίηση προγραμμάτων εκπαίδευσης και κατάρτισης
-
-
-    Το Υπουργείο Τουρισμού συμμετέχει στο έργο ALTTOUR του Προγράμματoς Interreg IPA CBC Ελλάδα-Αλβανία 2014-2020 ως δικαιούχος.
 thermalSprings:
-  heading: Σύνδεσμος Δήμων Ιαματικών Πηγών Ελλάδας
+  heading: Hellenic Association of Municipalities with Thermal Springs
   body: >-
-    Ο Σύνδεσμος Δήμων Ιαματικών Πηγών Ελλάδας ιδρύθηκε το 1983 με έδρα τα Καμένα
-    Βούρλα, ενώ το 1985 μεταφέρεται στη Θεσσαλονίκη όπου και παραμένει μέχρι
-    σήμερα. Το 1989 μετατρέπεται σε Αναπτυξιακό Σύνδεσμο δυνάμει των σχετικών
-    διατάξεων του Ν.1416/84, ενώ το 1993 παρατείνεται η διάρκεια του κατά
-    πενήντα χρόνια και διευρύνονται οι καταστατικοί του σκοποί, οι οποίοι είναι:
-    α) η ανάπτυξη και διάδοση του θερμαλισμού και των εφαρμογών του, β) η
-    δημιουργία κέντρων θερμαλιστικών σπουδών, γ) η προώθηση της επιστημονικής
-    έρευνας για την προστασία – αξιοποίηση και διαχείριση των γεωθερμικών πόρων
-    της χώρας καθώς και σύγχρονου νομοθετικού πλαισίου, δ) η παροχή
-    επιστημονικής και νομικής κάλυψης σε θέματα θερμαλισμού και γεωθερμίας στα
-    μέλη του ΣΔΙΠΕ, ε) η διοργάνωση ημερίδων ανάπτυξης και συνδιασκέψεων για το
-    θερμαλισμό, στ) η προώθηση και προβολή των στόχων του ΣΔΙΠΕ και του
-    Ιαματικού Τουρισμού και ζ) η δημιουργία παραρτημάτων θερμαλισμού στις
-    περιφέρειες της χώρας.
+    Hellenic Association of Municipalities with Thermal Springs was founded in 1983 in Kamena Vourla, while in 1985 the headquarters of the H.A.M.T.S were transferred in Thessaloniki where it operates until now.  In 1989, it was converted into a Development Association under the provisions of Law 1416/84, while in 1993 its duration is expanded by fifty years and its objectives are extended to: 
 
+    a) Development and dissemination of thermalism and its applications 
 
-    Σήμερα ο ΣΔΙΠΕ αριθμεί 53 δήμους – μέλη με γεωγραφική διασπορά στις 11 από τις 13 περιφέρειες της χώρας. Ο ΣΔΙΠΕ διοικείται από το Διοικητικό Συμβούλιο του που απαρτίζεται από 74 μέλη και από την Εκτελεστική του Επιτροπή η οποία εκλέγεται από το Διοικητικό Συμβούλιο, ενώ η θητεία των μελών των οργάνων του ακολουθεί την εκάστοτε δημοτική περίοδο. Ο Σύνδεσμος συγκροτείται από μέλη πρωτοβάθμιας Αυτοδιοίκησης - Δήμους - στα διοικητικά όρια των οποίων υπάρχουν αναγνωρισμένοι ιαματικοί φυσικοί πόροι. Ως φορέας ανέλαβε την πρωτοβουλία να ανταποκριθεί στα καθήκοντα και τις προκλήσεις που υπαγορεύουν οι ανθρώπινες ανάγκες για τη φροντίδα της υγείας με τη χρήση ιαματικών φυσικών πόρων.
+    b) Creation of an Educational Centre of thermalism
 
+    c) Promotion of the scientific research for the protection, development, and management of thermal natural resources and for the creation of a modern legal framework.
 
-    Οι κάθε είδους υδροθεραπευτικές εγκαταστάσεις σε ένα θερμαλιστικό περιβάλλον αποτελούν για το Σύνδεσμο μονάδες πρωτοβάθμιας φροντίδας της ανθρώπινης υγείας. Οι μονάδες αυτές επηρεάζουν το πολιτισμικό περιβάλλον της περιοχής, αποτελούν κλειδί για την οικονομία και την ανάπτυξη των τοπικών κοινωνιών, συνδέονται με την τοπική ιστορία και τις παραδόσεις, θέτουν σε κίνηση πολυάριθμες δραστηριότητες και αναδεικνύουν την ιδιαιτερότητα της φυσιογνωμίας του θερμαλιστικού περιβάλλοντος. Ο Σύνδεσμος από τη σύστασή του μέχρι τώρα, στέκεται αρωγός κάθε αναπτυξιακής πρωτοβουλίας των μελών του στους τομείς του Ιαματικού Τουρισμού - Τουρισμού Υγείας και ενεργειακής χρήσης των θερμών νερών.
+    d) Provision of scientific and legal coverage on thermalism and geothermal energy topics of the members of the H.A.M.T.S
+
+    e) Organization of workshops and conferences for thermalism
+
+    f) Promotion of the objectives of H.A.M.T.S and Thermal Tourism 
+
+    (g) Creation of thermalism branches across the country. Today, H.A.M.T.S Today H.A.M.T.S consists of 53 municipalities-members with geographical dispersion in 11 of the 13 regions of the country. 
+
+    H.A.M.T.S board is composed by 74 representatives and by its Executive Committee which is elected by the Board of Directors, while the stint of the members and the bodies follow the respective municipal period. 
+
+    The Association is comprised of members of first-level local Administration – Municipalities - in whose administrative boundaries there are acknowledged curative natural resources.
+
+    The Association, as a body that is aware of the situation, took the initiative to respond to the responsibilities and challenges that are dictated by the human needs for health care with the use of curative natural resources.
+
+    The Association considers every kind of hydrotherapy facilities in a thermalistic environment as units of the primary care of human health. These units, which affect the cultural environment of their area, are the key to the economy and development of the local communities, are related to the local history and tradition, set in motion numerous activities, and highlight the uniqueness of the character of the thermalistic environment. The Association, since its formation, supports and aids every developmental initiative of its members in the fields of Spa- Medical Tourism and in the energy usage of the hot water.
+
 goals:
-  heading: Στόχοι Συνδέσμου
+  heading: Goals of the Association
   body: >-
-    
+    * The promotion, and protection of the curative natural resources of our country, as well as their environment.
 
-    * Η ανάδειξη, προβολή και προστασία των ιαματικών φυσικών πόρων της χώρας μας και του περιβάλλοντός τους.
+    * The promotion in Greece and abroad, of the curative thermalistic centers, every form of hydrotherapy treatment, prevention, and well-being, as well as all elements and works of art, history and culture that are connected to the curative springs, hydrotherapy- climatotherapy, thalasso-therapy and clay therapy.
 
-    * Η ανάδειξη και προβολή στην Ελλάδα και το εξωτερικό, των ιαματικών θερμαλιστικών κέντρων, κάθε μορφή υδροθεραπευτικής αγωγής, πρόληψης και ευεξίας καθώς και όλων των στοιχείων και έργων τέχνης , ιστορίας και πολιτισμού, που συνδέονται με τις ιαματικές πηγές, την υδροθεραπεία – κλιματοθεραπεία, τη θαλασσοθεραπεία και πηλοθεραπεία.
+    * The support of every form of therapeutic treatment, prevention and well –being with the use of the curative natural resources as well as every form of thalasso-therapy, climatotherapy, cave therapy, that are realised and have as a goal the care of the human physical and mental health.
 
-    * Η υποστήριξη όλων των μορφών θεραπευτικής αγωγής, πρόληψης και ευεξίας με χρήση ιαματικών φυσικών πόρων καθώς επίσης και κάθε μορφή θαλασσοθεραπείας, κλιματοθεραπείας, σπηλαιοθεραπείας, που πραγματοποιούνται και στοχεύουν στην φροντίδα της ανθρώπινης σωματικής και ψυχικής υγείας.
+    * The establishment, and promotion of the variety of the thermalistic therapeutic places of the country, as well as the support and promotion of every alternative form of tourism (religion, conference, nature loving, etc.) in the places of the curative natural resources and thermalistic centers.
 
-    * Η καθιέρωση, ανάδειξη και προβολή της διαφορετικότητας των θερμαλιστικών θεραπευτικών τόπων της χώρας καθώς και η υποστήριξη και προώθηση κάθε εναλλακτικής μορφής τουρισμού (θρησκευτικού, συνεδριακού, φυσιολατρικού κ.ά.) στις περιοχές των ιαματικών φυσικών πόρων και θερμαλιστικών κέντρων.
+    * The scientific research and study of the hydrogeological, chemical, biological, and environmental characteristics of the curative natural resources, the local history, the cultural elements that relate to the use of the curative springs as well as the statistic evaluation of the results of the thermalistic treatments.
 
-    * Η επιστημονική έρευνα και μελέτη των υδρογεωλογικών, χημικών, βιολογικών και περιβαλλοντολογικών χαρακτηριστικών των ιαματικών φυσικών πόρων, των τοπικών ιστορικών, πολιτιστικών στοιχείων που συνδέονται με τη χρήση των ιαματικών πηγών καθώς και η στατιστική αξιολόγηση των αποτελεσμάτων των θερμαλιστικών θεραπειών.
+    * The scientific research, verification, and evaluation of the results of the therapeutic indications- contraindications of the curative natural resources, of the environment and the climate conditions of the thermalistic therapeutic places. The realization of meetings, educational seminaries, conferences, scientific meetings that concern the sustainable development of thermalism, the sustainable management of the curative natural resources and of the environment and every other act or action that falls under the objectives of the Association.
 
-    * Η επιστημονική έρευνα, τεκμηρίωση και αξιολόγηση των αποτελεσμάτων των θεραπευτικών ενδείξεων-αντενδείξεων των ιαματικών φυσικών πόρων, του περιβάλλοντος και των κλιματικών συνθηκών των θερμαλιστικών θεραπευτικών τόπων. Η διενέργεια ημερίδων, επιμορφωτικών σεμιναρίων, συνεδρίων, επιστημονικών συναντήσεων που αφορούν στη βιώσιμη ανάπτυξη του θερμαλισμού, την αειφόρο διαχείριση των ιαματικών φυσικών πόρων και του περιβάλλοντος και κάθε άλλης ενέργειας ή δράσης που αφορά στο αντικείμενο.
 sustainable:
   heading: Sustainable Environment Albania (SEA)
   body: >-
-    Ο «Sustainable Environment Albania» είναι ένας ανεξάρτητος μη κερδοσκοπικός
-    Οργανισμός που έχει σαν στόχο να αλλάξει την γενική αντίληψη και επίγνωση
-    απέναντι στην προστασία του περιβάλλοντος μέσω απτών δράσεων. Ο Οργανισμός
-    ιδρύθηκε το 2014 και οι δραστηριότητές του εκτείνονται σε ποικίλα κι
-    ευαίσθητα περιβαλλοντικά ζητήματα όπως: ανακύκλωση, «πράσινη ζωή», προστασία
-    του νερού, προώθηση του τουρισμού και της πολιτιστικής κληρονομιάς,
-    περιβαλλοντική εκπαίδευση, εθελοντισμό κ.α.
+    Sustainable Environment Albania (SEA) is an independent non-profit organization that aims to change the perception and awareness towards environmental protection through concrete actions. The organization was founded in 2014. SEA extends its activities to various environmentally sensitive issues, such as: recycling, ʺgreen lifeʺ, water conservation, tourism promotion, cultural heritage promotion, environmental education, volunteering, etc.
 
+    SEA has been part of several EU funded projects, as external consultants and as partners, to provide a genuine scientific and social contribution. The organization extends its contribution to national and international projects in the field of environment, education, volunteerism, etc.
 
-    Ο Οργανισμός «Sustainable Environment Albania» έχει συμμετάσχει σε πληθώρα συγχρηματοδοτούμενων έργων της ΕΕ σαν εξωτερικός σύμβουλος και σαν εταίρος παρέχοντας την επιστημονική και κοινωνική του συνεισφορά. Η συμβολή του εκτείνεται σε εθνικά και διεθνή έργα στον τομέα του περιβάλλοντος, της εκπαίδευσης και του εθελοντισμού.
-
-
-    Το όραμα του Οργανισμού συνίσταται στην εύρεση λύσεων και στην ανάπτυξη μακροπρόθεσμων συνεργειών με άλλους οργανισμούς ή άτομα που μοιράζονται, χωρίς συμβιβασμούς, κοινούς στόχους για μια πιο οικολογική προσέγγιση απέναντι στον πλανήτη.
+    The organization vision consists of building solutions and long-term partnerships with organizations or individuals who share our goals uncompromisingly for a better attitude towards our planet.
 ---

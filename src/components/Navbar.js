@@ -74,8 +74,8 @@ const Navbar = class extends React.Component {
                   {item.title}
                 </Link>
               ))}
-              <Link className="navbar-item">
-                <img src={facebook} alt="Facebok" />
+              <Link className="navbar-item" to="https://www.facebook.com/Alttour-Alternative-Tourism-106988367906271">
+                <img src={facebook} alt="Facebok"  target="_blank"/>
               </Link>
             </div>
             <LanguageSwitcher slug={this.props.slug} />

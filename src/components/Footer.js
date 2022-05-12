@@ -54,7 +54,7 @@ const Footer = class extends React.Component {
                       </Link>
                     </li>
                     <li>
-                      <a title="facebook" href="https://facebook.com">
+                      <a title="facebook" href="https://www.facebook.com/Alttour-Alternative-Tourism-106988367906271">
                         <img
                           src={facebook}
                           alt="Facebook"

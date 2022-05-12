@@ -3,6 +3,7 @@ templateKey: templates/index
 type: 1
 language: en
 heroHeading: Alternative tourism - ALTTOUR
+button: Read More
 image: /img/waterfall.jpg
 locations:
   title: Περιοχές Εφαρμογής

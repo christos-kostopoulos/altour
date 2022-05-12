@@ -2,10 +2,11 @@
 templateKey: templates/index
 type: 1
 language: al
-heroHeading: Willkommen bei Robco Industries (TM) Termlink
+heroHeading: Alternative tourism - ALTTOUR
 image: /img/waterfall.jpg
 locations:
-  title: Περιοχές Εφαρμογής
+  title: Zonat Aplikimit
+  button: Read More
   description: >
     Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip.
 latest:

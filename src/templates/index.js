@@ -12,6 +12,7 @@ import watermark3 from "../img/watermark-3.png";
 export const IndexPageTemplate = ({
   heroImage,
   heroHeading,
+  button,
   locations,
   latest,
   locationPosts,
@@ -39,7 +40,7 @@ export const IndexPageTemplate = ({
                   {project.description}
                 </p>
                 <Link to="/about">
-                  <button className="button is-primary">READ MORE</button>
+                  <button className="button is-primary">{button}</button>
                 </Link>
               </div>
             </div>
@@ -90,6 +91,7 @@ const IndexPage = ({ data }) => {
       <IndexPageTemplate
         heroImage={heroImage}
         heroHeading={content.heroHeading}
+        button={content.button}
         locations={content.locations}
         latest={content.latest}
         locationPosts={data.locationPosts}
@@ -120,6 +122,7 @@ export const indexQuery = graphql`
       frontmatter {
         language
         heroHeading
+        button
         image {
           childImageSharp {
             gatsbyImageData(quality: 100, layout: FULL_WIDTH)
