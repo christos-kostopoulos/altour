@@ -4,7 +4,13 @@ import { StaticImage } from "gatsby-plugin-image";
 import { Link } from "gatsby";
 import useMobile from "../hooks/useMobile";
 export default function FullWidthImage(props) {
-  const { height = "100vh", img, title, imgPosition = "top left" } = props;
+  const {
+    height = "100vh",
+    img,
+    title,
+    imgPosition = "top left",
+    button = "Read more",
+  } = props;
   const { isMobile } = useMobile();
   return (
     <React.Fragment>
@@ -54,7 +60,7 @@ export default function FullWidthImage(props) {
               style={{ width: "50%" }}
             >
               <Link className="btn mt-4" to="/blog">
-                ΠΑΤΗΣΤΕ ΕΔΩ
+                {button}
               </Link>
             </div>
           </div>
