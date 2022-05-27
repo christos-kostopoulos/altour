@@ -1,12 +1,13 @@
 import React from "react";
 import PreviewCompatibleImage from "../PreviewCompatibleImage";
 import { Link } from "gatsby";
+import { GatsbyImage } from "gatsby-plugin-image";
 
 const UpcomingRollItem = (post) => (
   <div className="column is-4" key={post.id}>
     <div
       className="upcoming-card p-3 has-text-centered"
-      style={{ backgroundColor: "#237da5"}}
+      style={{ backgroundColor: "#237da5" }}
     >
       <header>
         <h3 className="has-text-white is-size-3">{post.frontmatter.title}</h3>
@@ -17,17 +18,20 @@ const UpcomingRollItem = (post) => (
       <div className="upcoming-card-image">
         {post.frontmatter.image ? (
           <div className="featured-thumbnail">
-            <PreviewCompatibleImage
+            {/* <PreviewCompatibleImage
               imageInfo={{
                 image: post.frontmatter.image,
                 alt: `featured image thumbnail for post ${post.frontmatter.title}`,
                 width:
-                  post.frontmatter.image.childImageSharp.gatsbyImageData
-                    .width,
+                  post.frontmatter.image.childImageSharp.gatsbyImageData.width,
                 height:
-                  post.frontmatter.image.childImageSharp.gatsbyImageData
-                    .height,
+                  post.frontmatter.image.childImageSharp.gatsbyImageData.height,
               }}
+            /> */}
+            <GatsbyImage
+              image={post.frontmatter.image.childImageSharp.gatsbyImageData}
+              style={{height: "250px"}}
+              alt={`featured image thumbnail for post ${post.frontmatter.title}`}
             />
           </div>
         ) : null}
