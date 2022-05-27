@@ -6,7 +6,7 @@ heroHeading: Alternative tourism - ALTTOUR
 button: Read More
 image: /img/waterfall.jpg
 locations:
-  title: Περιοχές Εφαρμογής
+  title: Applying Areas
   description: >
     Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
     nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut

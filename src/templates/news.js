@@ -9,7 +9,7 @@ import UpcomingRoll from "../components/UpcomingRoll/UpcomingRoll";
 const LocationPage = ({ data }) => {
   const { frontmatter } = data.page;
   const { latestPosts } = data;
-  console.log(data);
+  
   return (
     <Layout>
       <Navbar lang={frontmatter.language} slug={data.page.fields.slug} />
