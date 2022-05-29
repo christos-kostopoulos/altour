@@ -92,15 +92,9 @@ const Footer = class extends React.Component {
                   <div className="is-flex is-justify-content-center">
                     <Link
                       className="has-text-primary pr-1 pl-2 is-size-7 has-text-weight-bold"
-                      to="/"
+                      to="/gdpr"
                     >
-                      GDPR |
-                    </Link>
-                    <Link
-                      className="has-text-primary pr-2  is-size-7 has-text-weight-bold"
-                      to="/"
-                    >
-                      COOKIES POLICY
+                      GDPR | COOKIES POLICY
                     </Link>
                   </div>
                 </section>
