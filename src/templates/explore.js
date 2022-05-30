@@ -42,7 +42,7 @@ export default function ExplorePage({ data }) {
             />
             <h2>Benja</h2>
             <Gallery
-              gallery={["benja.jpg", "benja1.jpg", "benja2.jpg", "benja3.jpg"]}
+              gallery={["benja.jpg", "benja1.jpg", "benja_two.jpg", "benja_three.jpg"]}
             />
           </div>
         </div>
