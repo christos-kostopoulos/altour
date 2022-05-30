@@ -129,7 +129,6 @@ const LocationsPage = ({ data }) => {
               "sarandaporo2.jpg",
               "sarandaporo3.jpg",
               "sarandaporo4.jpg",
-              "sarandaporo5.jpg",
               "sarandaporo6.jpg",
             ]}
           />

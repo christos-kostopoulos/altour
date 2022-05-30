@@ -1,6 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { graphql, StaticQuery } from "gatsby";
+import { graphql, StaticQuery, Link } from "gatsby";
 import LocationRollItem from "./LocationRollItem";
 import Slider from "react-slick";
 import "./locationRoll.css";
@@ -49,7 +49,9 @@ class LocationRoll extends React.Component {
             {posts
               .filter(({ node: post }) => post.frontmatter.country !== "al")
               .map(({ node: post }) => (
-                <LocationRollItem key={post.id} {...post} />
+                <Link to="/locations">
+                  <LocationRollItem key={post.id} {...post} />
+                </Link>
               ))}
           </Slider>
         )}
