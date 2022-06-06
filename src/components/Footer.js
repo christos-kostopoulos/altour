@@ -17,7 +17,6 @@ const Footer = () => {
     typeof window !== "undefined" ? window.location.pathname.slice(1, 3) : "";
   let lang = path === "en" || path === "al" ? path : "gr";
 
-  console.log(lang);
 
   const filteredNavData = navData.filter((data) => data.lang === lang)[0];
   const filteredContactData = contactData.filter(

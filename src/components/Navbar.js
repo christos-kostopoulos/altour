@@ -5,7 +5,6 @@ import LanguageSwitcher from "./LanguageSwitcher";
 import facebook from "../img/social/facebook_footer.svg";
 import logo from "../img/logo.png";
 
-
 const Navbar = class extends React.Component {
   constructor(props) {
     super(props);
@@ -39,6 +38,9 @@ const Navbar = class extends React.Component {
     const filteredData = staticData.filter(
       (data) => data.lang === this.props.lang
     )[0];
+
+    const logo_link = this.props.lang === "gr" ? "" : this.props.lang;
+
     return (
       <nav
         className="navbar is-transparent is-fixed-top"
@@ -47,7 +49,7 @@ const Navbar = class extends React.Component {
       >
         <div className="container mt-4">
           <div className="navbar-brand pb-2 mr-4">
-            <Link to="/" className="navbar-item" title="Logo">
+            <Link to={`/${logo_link}`} className="navbar-item" title="Logo">
               <img src={logo} alt="Interreg" style={{ width: "175px" }} />
             </Link>
             {/* Hamburger menu */}
@@ -74,8 +76,12 @@ const Navbar = class extends React.Component {
                   {item.title}
                 </Link>
               ))}
-              <Link target="_blank" className="navbar-item" to="https://www.facebook.com/Alttour-Alternative-Tourism-106988367906271">
-                <img src={facebook} alt="Facebok"  target="_blank"/>
+              <Link
+                target="_blank"
+                className="navbar-item"
+                to="https://www.facebook.com/Alttour-Alternative-Tourism-106988367906271"
+              >
+                <img src={facebook} alt="Facebok" target="_blank" />
               </Link>
             </div>
             <LanguageSwitcher slug={this.props.slug} />
