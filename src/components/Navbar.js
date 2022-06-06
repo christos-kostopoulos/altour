@@ -40,7 +40,6 @@ const Navbar = class extends React.Component {
     )[0];
 
     const logo_link = this.props.lang === "gr" ? "" : this.props.lang;
-
     return (
       <nav
         className="navbar is-transparent is-fixed-top"
