@@ -22,4 +22,4 @@ module.exports = [
   },
 ];
 
-// todo: add journal page
+

@@ -8,7 +8,7 @@ title: Florina
 country: gr
 date: 2022-05-11
 ---
-MUNICIPALITY OF AMYNTAIO
+Municipality Of Amyntaio
 
 <ins>Thermal Natural Resource of Sour Water</ins>
 

@@ -5,9 +5,10 @@ language: en
 contentType: location
 image: /img/ioannina.jpg
 title: Ioannina
+country: gr
 date: 2022-05-10
 ---
-MUNICIPALITY OF KONITSA
+Municipality Of Konitsa
 
 <ins>Thermal Natural Resource of Amarantos</ins>
 

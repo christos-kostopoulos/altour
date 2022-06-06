@@ -28,7 +28,6 @@ const Footer = () => {
   const filteredNavData = navData.filter((data) => data.lang === lang)[0];
   const filteredContactData =  contactData.filter((data) => data.lang === lang)[0];
 
-  console.log(filteredContactData)
   return (
     <footer className="footer">
       <div className="content">
@@ -80,14 +79,15 @@ const Footer = () => {
                   <small>mailbox@mintour.gr</small>
                   <br />
                   <small>+30 210 3736001 | +30 210 3736001</small>
-                  <hr
+                 
+                </p>
+                <hr
                     style={{
                       width: "50%",
                       margin: "0 auto",
                       marginTop: ".5rem",
                     }}
                   />
-                </p>
                 <div className="is-flex is-justify-content-center">
                   <Link
                     className="has-text-primary pr-1 pl-2 is-size-7 has-text-weight-bold"
