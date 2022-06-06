@@ -14,7 +14,8 @@ import contactData from "../data/footer"
 
 const Footer = () => {
   let lang = "";
-  switch (window.location.pathname.slice(1, 3)) {
+  const path = typeof window !== 'undefined' ? window.location.pathname : '';
+  switch (path.slice(1, 3)) {
     case "al":
       lang = "al";
       break;
