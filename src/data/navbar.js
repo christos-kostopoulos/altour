@@ -30,7 +30,7 @@ module.exports = [
       { href: "/al/about", title: "PΑRTNERITETI" },
       { href: "/al/project", title: "PROJECTI" },
       { href: "/al/locations", title: "ZONAT E APLIKIMIT" },
-      { href: "/el/explore", title: "EKSPLORIMI" },
+      { href: "/al/explore", title: "EKSPLORIMI" },
       { href: "/al/news", title: "NEWS" },
       { href: "/al/contact", title: "KOMUNIKIMI" },
     ],
