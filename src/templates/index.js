@@ -18,10 +18,12 @@ export const IndexPageTemplate = ({
   locationPosts,
   latestPosts,
   project,
+  lang
 }) => {
+  const btnUrl = lang === "gr" ? "" : "/" + lang;
   return (
     <>
-      <FullWidthImage img={heroImage} title={heroHeading} button={button} />
+      <FullWidthImage img={heroImage} title={heroHeading} button={button} btnUrl={btnUrl}/>
       <section className="section section--gradient">
         <div className="container">
           <div className="content">
@@ -39,7 +41,7 @@ export const IndexPageTemplate = ({
                 >
                   {project.description}
                 </p>
-                <Link to="/about">
+                <Link to={`${btnUrl}/project`}>
                   <button className="button is-primary">{button}</button>
                 </Link>
               </div>
@@ -89,6 +91,7 @@ const IndexPage = ({ data }) => {
     <Layout>
       <Navbar lang={content.language} slug={data.page.fields.slug} />
       <IndexPageTemplate
+        lang={content.language}
         heroImage={heroImage}
         heroHeading={content.heroHeading}
         button={content.button}
@@ -111,6 +114,9 @@ export const indexQuery = graphql`
         slug
       }
       html
+      frontmatter {
+        language
+      }
     }
     content: markdownRemark(
       frontmatter: {

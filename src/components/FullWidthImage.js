@@ -10,6 +10,7 @@ export default function FullWidthImage(props) {
     title,
     imgPosition = "top left",
     button = "Read more",
+    btnUrl
   } = props;
   const { isMobile } = useMobile();
   return (
@@ -59,7 +60,7 @@ export default function FullWidthImage(props) {
               className="is-flex is-justify-content-center"
               style={{ width: "50%" }}
             >
-              <Link className="btn mt-4" to="/blog">
+              <Link className="btn mt-4" to={`${btnUrl}/about`}>
                 {button}
               </Link>
             </div>
