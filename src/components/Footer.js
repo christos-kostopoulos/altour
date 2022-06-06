@@ -10,24 +10,19 @@ import instagram from "../img/social/instagram.svg";
 import twitter from "../img/social/twitter.svg";
 import vimeo from "../img/social/vimeo.svg";
 import navData from "../data/navbar";
-import contactData from "../data/footer"
+import contactData from "../data/footer";
 
 const Footer = () => {
-  let lang = "";
-  const path = typeof window !== 'undefined' ? window.location.pathname : '';
-  switch (path.slice(1, 3)) {
-    case "al":
-      lang = "al";
-      break;
-    case "en":
-      lang = "en";
-    default:
-      lang = "gr";
-      break;
-  }
+  const path =
+    typeof window !== "undefined" ? window.location.pathname.slice(1, 3) : "";
+  let lang = path === "en" || path === "al" ? path : "gr";
+
+  console.log(lang);
 
   const filteredNavData = navData.filter((data) => data.lang === lang)[0];
-  const filteredContactData =  contactData.filter((data) => data.lang === lang)[0];
+  const filteredContactData = contactData.filter(
+    (data) => data.lang === lang
+  )[0];
 
   return (
     <footer className="footer">
@@ -80,19 +75,20 @@ const Footer = () => {
                   <small>mailbox@mintour.gr</small>
                   <br />
                   <small>+30 210 3736001 | +30 210 3736001</small>
-                 
                 </p>
                 <hr
-                    style={{
-                      width: "50%",
-                      margin: "0 auto",
-                      marginTop: ".5rem",
-                    }}
-                  />
+                  style={{
+                    width: "50%",
+                    margin: "0 auto",
+                    marginTop: ".5rem",
+                  }}
+                />
                 <div className="is-flex is-justify-content-center">
                   <Link
                     className="has-text-primary pr-1 pl-2 is-size-7 has-text-weight-bold"
-                    to={`/${lang}/gdpr`}
+                    to={`${
+                      lang === "en" || lang === "al" ? "/" + lang : ""
+                    }/gdpr`}
                   >
                     GDPR | COOKIES POLICY
                   </Link>
