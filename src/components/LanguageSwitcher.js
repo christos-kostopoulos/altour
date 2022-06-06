@@ -30,6 +30,7 @@ const LanguageSwitcher = ({ slug }) => {
               {nav.map((item) => {
                 return (
                   <Link
+                   key={item.lang}
                     className={`${componentStyle}-item${
                       activeLanguage === item.lang ? "-active" : "" 
                     }`}

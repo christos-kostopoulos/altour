@@ -12,7 +12,7 @@ function encode(data) {
 
 export default function Contact({ data }) {
   const [state, setState] = React.useState({ isValidated: false });
-    const { frontmatter: page } = data.page;
+  const { frontmatter: page } = data.page;
   const handleChange = (e) => {
     setState({ [e.target.name]: e.target.value });
   };
@@ -31,7 +31,7 @@ export default function Contact({ data }) {
       .then(() => navigate(form.getAttribute("action")))
       .catch((error) => alert(error));
   };
-  console.log(data);
+
   return (
     <Layout>
       <Navbar lang={page.language} slug={data.page.fields.slug} />
@@ -49,18 +49,15 @@ export default function Contact({ data }) {
       >
         <div className="container">
           <div className="content">
-            <h1>Contact</h1>
+            <h1>{page.title}</h1>
             <div className="columns">
               <div className="column is-half">
-                <h5>Program Management Contacts</h5>
-                <p>
-                  Υπουργείο Τουρισμού Λεωφόρος Αμαλίας 12, 105 57, Αθήνα
-                  <br />
-                  mailbox@mintour.gr <br />
-                  +30 210 3736001 | +30 210 3736001
-                </p>
+                <h5 style={{ fontWeight: "bold" }}>{page.contactsTitle}</h5>
+                <h5>{page.ministry}</h5>
+                <h5> mailbox@mintour.gr</h5>
+                <h5>+30 210 3736001 | +30 210 3736001</h5>
 
-                <h1>Useful links</h1>
+                <h1>{page.links}</h1>
                 <a href="https://greece-albania.eu/" target={"_blank"}>
                   www.greece-albania.eu
                 </a>
@@ -74,6 +71,7 @@ export default function Contact({ data }) {
                 </a>
               </div>
               <div className="column is-half">
+                <h2>{page.formTitle}</h2>
                 <form
                   name="contact"
                   method="post"
@@ -159,6 +157,10 @@ export const ContactPageQuery = graphql`
       frontmatter {
         language
         title
+        links
+        contactsTitle
+        ministry
+        formTitle
       }
     }
   }

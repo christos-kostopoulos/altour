@@ -49,8 +49,8 @@ class LocationRoll extends React.Component {
             {posts
               .filter(({ node: post }) => post.frontmatter.country !== "al")
               .map(({ node: post }) => (
-                <Link to="/locations">
-                  <LocationRollItem key={post.id} {...post} />
+                <Link key={post.id} to="/locations">
+                  <LocationRollItem {...post} />
                 </Link>
               ))}
           </Slider>

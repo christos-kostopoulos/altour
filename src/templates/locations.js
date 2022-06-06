@@ -12,7 +12,7 @@ const LocationsPage = ({ data }) => {
   const PageContent = HTMLContent || Content;
   const { frontmatter: page } = data.page;
   const { edges: locations } = data.locations;
-  console.log(page.language);
+
   const sarandaporo =
     locations.length > 0 &&
     locations.find((loc) => loc.node.fields.slug.indexOf("/sarandaporo/") > -1);
@@ -36,7 +36,13 @@ const LocationsPage = ({ data }) => {
           <h1 className="title  has-text-weight-light is-bold-light is-size-2 is-size-3-mobile">
             {page.title}
           </h1>
-          <h2>{page.language === "gr" ? "Ελλαδα" : "Greek"} </h2>
+          <h2>
+            {page.language === "gr"
+              ? "Ελλάδα"
+              : page.language === "al"
+              ? "Greqia"
+              : "Greece"}
+          </h2>
           {locations
             .filter(
               (loc) =>
@@ -94,18 +100,16 @@ const LocationsPage = ({ data }) => {
                 </div>
               );
             })}
-          <h2>{page.language === "gr" ? "Αλβανία" : "Albania"}</h2>
+          <h2>
+            {page.language === "gr"
+              ? "Αλβανία"
+              : page.language === "al"
+              ? "Shqipëri"
+              : "Albania"}
+          </h2>
           {/* SARANTOPORO PLACE */}
           {sarandaporo ? (
             <div className="columns">
-              <div className="column is-8">
-                <div className="html">
-                  <PageContent
-                    className="content"
-                    content={sarandaporo.node.html}
-                  />
-                </div>
-              </div>
               <div className="column is-4">
                 <PreviewCompatibleImage
                   imageInfo={{
@@ -120,21 +124,24 @@ const LocationsPage = ({ data }) => {
                   }}
                 />
               </div>
+              <div className="column is-8">
+                <div className="html">
+                  <PageContent
+                    className="content"
+                    content={sarandaporo.node.html}
+                  />
+                </div>
+              </div>
             </div>
           ) : null}
-          <Gallery
-            gallery={[
-              "sarandaporo.jpg",
-              "sarandaporo1.jpg",
-              "sarandaporo2.jpg",
-              "sarandaporo3.jpg",
-              "sarandaporo4.jpg",
-              "sarandaporo6.jpg",
-            ]}
-          />
           {/* Benga PLACE */}
           {benja ? (
             <div className="columns">
+              <div className="column is-8">
+                <div className="html">
+                  <PageContent className="content" content={benja.node.html} />
+                </div>
+              </div>
               <div className="column is-4">
                 <PreviewCompatibleImage
                   imageInfo={{
@@ -149,17 +156,8 @@ const LocationsPage = ({ data }) => {
                   }}
                 />
               </div>
-              <div className="column is-8">
-                <div className="html">
-                  <PageContent className="content" content={benja.node.html} />
-                </div>
-              </div>
             </div>
           ) : null}
-
-          <Gallery
-            gallery={["benja.jpg", "benja1.jpg", "benja_two.jpg", "benja_three.jpg"]}
-          />
         </section>
       </div>
     </Layout>

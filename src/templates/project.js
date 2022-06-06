@@ -12,7 +12,7 @@ const ProjectPage = ({ data }) => {
   const { frontmatter: page } = data.page;
 
   const heroImage = getImage(page.image) || page.image;
-  console.log(page);
+ 
   return (
     <Layout>
       <Navbar lang={page.language} slug={data.page.fields.slug} />
